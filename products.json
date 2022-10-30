@@ -1,0 +1,2121 @@
+[
+  {
+    "id": "MCO967705850",
+    "site_id": "MCO",
+    "title": "Laptop Asus M515da Gris 15.6 , Amd Ryzen 5 3500u  16gb De Ram 1tb Hdd 256gb Ssd, Amd Radeon Rx Vega 8 (ryzen 2000/3000) 1920x1080px Windows 10",
+    "seller": {
+      "id": 816184618,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 1999900,
+    "prices": {
+      "id": "MCO967705850",
+      "prices": [
+        {
+          "id": "8",
+          "type": "standard",
+          "amount": 1999900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-22T21:30:16Z",
+          "conditions": {
+            "context_restrictions": [],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "3",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 1949900,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-09-23T15:21:25Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 7,
+    "sold_quantity": 15,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-09-17T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/laptop-asus-m515da-gris-156-amd-ryzen-5-3500u-16gb-de-ram-1tb-hdd-256gb-ssd-amd-radeon-rx-vega-8-ryzen-20003000-1920x1080px-windows-10/p/MCO19537081",
+    "thumbnail": "http://http2.mlstatic.com/D_894333-MLA51165023913_082022-I.jpg",
+    "thumbnail_id": "894333-MLA51165023913_082022",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 55552.78,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-ANT",
+      "state_name": "Antioquia",
+      "city_id": "TUNPQ01FRGRjNjc4",
+      "city_name": "Medellín"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "self_service_out",
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "xd_drop_off",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-ANT",
+        "name": "Antioquia"
+      },
+      "city": {
+        "id": "TUNPQ01FRGRjNjc4",
+        "name": "Medellín"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "id": "BRAND",
+        "value_name": "Asus",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7294334",
+            "name": "Asus",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "source": 1,
+        "name": "Marca",
+        "value_id": "7294334",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "string"
+      },
+      {
+        "value_struct": null,
+        "value_type": "list",
+        "id": "ITEM_CONDITION",
+        "value_id": "2230284",
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null,
+            "source": 3045741222775799
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 3045741222775799,
+        "name": "Condición del ítem",
+        "value_name": "Nuevo"
+      },
+      {
+        "name": "Línea",
+        "value_name": "ASUS",
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "LINE",
+        "values": [
+          {
+            "id": null,
+            "name": "ASUS",
+            "struct": null,
+            "source": 3045741222775799
+          }
+        ],
+        "source": 3045741222775799,
+        "value_id": null
+      },
+      {
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "value_type": "string",
+        "id": "MODEL",
+        "values": [
+          {
+            "id": "11098915",
+            "name": "M515DA",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "value_name": "M515DA",
+        "value_struct": null,
+        "name": "Modelo",
+        "value_id": "11098915"
+      },
+      {
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "id": "PROCESSOR_BRAND",
+        "value_id": "18034",
+        "values": [
+          {
+            "id": "18034",
+            "name": "AMD",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "value_type": "list",
+        "name": "Marca del procesador",
+        "value_name": "AMD"
+      },
+      {
+        "value_name": "Ryzen 5",
+        "values": [
+          {
+            "source": 1,
+            "id": "2244215",
+            "name": "Ryzen 5",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "value_type": "string",
+        "id": "PROCESSOR_LINE",
+        "name": "Línea del procesador",
+        "value_id": "2244215",
+        "value_struct": null,
+        "attribute_group_name": "Otros"
+      },
+      {
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "id": "PROCESSOR_MODEL",
+        "name": "Modelo del procesador",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7898622",
+            "name": "3500U",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "value_id": "7898622",
+        "value_name": "3500U",
+        "attribute_group_name": "Otros",
+        "value_type": "string"
+      },
+      {
+        "id": "WEIGHT",
+        "value_id": "2208232",
+        "value_struct": {
+          "number": 1.8,
+          "unit": "kg"
+        },
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "name": "Peso",
+        "value_name": "1.8 kg",
+        "values": [
+          {
+            "id": "2208232",
+            "name": "1.8 kg",
+            "struct": {
+              "number": 1.8,
+              "unit": "kg"
+            },
+            "source": 1
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "value_type": "number_unit"
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO1652",
+    "official_store_id": null,
+    "domain_id": "MCO-NOTEBOOKS",
+    "catalog_product_id": "MCO19537081",
+    "tags": [
+      "dragged_bids_and_visits",
+      "good_quality_picture",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null,
+    "order_backend": 1
+  },
+  {
+    "id": "MCO657791576",
+    "site_id": "MCO",
+    "title": "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
+    "seller": {
+      "id": 516679078,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 3049900,
+    "prices": {
+      "id": "MCO657791576",
+      "prices": [
+        {
+          "id": "11",
+          "type": "standard",
+          "amount": 3449900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-04-05T20:08:51Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "77",
+          "type": "standard",
+          "amount": 2999900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-05T18:50:46Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_mshops"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "79",
+          "type": "promotion",
+          "amount": 3049900,
+          "regular_amount": 3449900,
+          "currency_id": "COP",
+          "last_updated": "2022-10-08T21:39:12Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": "2021-01-05T05:00:00Z",
+            "end_time": "2024-01-01T04:59:00Z",
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {
+            "campaign_id": "MCO2298",
+            "promotion_id": "OFFER-MCO657791576-177084337",
+            "promotion_type": "campaign"
+          }
+        },
+        {
+          "id": "80",
+          "type": "promotion",
+          "amount": 2849905,
+          "regular_amount": 2999900,
+          "currency_id": "COP",
+          "last_updated": "2022-10-08T21:39:12Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_mshops"
+            ],
+            "start_time": "2022-05-02T17:06:22Z",
+            "end_time": "2023-01-01T04:59:59Z",
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {
+            "promotion_id": "TR-516679078-20220502130712712:MCO657791576",
+            "promotion_type": "custom"
+          }
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "60",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 2949900,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-08-23T23:36:32Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 1,
+    "sold_quantity": 50,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2041-08-15T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.co/MCO-657791576-torre-cpu-gamer-ryzen-7-5700g-vega-8-1tb-16gb-pc-_JM",
+    "thumbnail": "http://http2.mlstatic.com/D_661268-MCO47189663977_082021-I.jpg",
+    "thumbnail_id": "661268-MCO47189663977_082021",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 84719.44,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-DC",
+      "state_name": "Bogotá D.C.",
+      "city_id": "TUNPQ0NIQTk2OTI1",
+      "city_name": "Chapinero"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "self_service_in",
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "xd_drop_off",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-DC",
+        "name": "Bogotá D.C."
+      },
+      "city": {
+        "id": "TUNPQ0NIQTk2OTI1",
+        "name": "Chapinero"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "value_name": "AMD",
+        "id": "BRAND",
+        "value_id": "18034",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "AMD",
+            "struct": null,
+            "source": 2860837171021627,
+            "id": "18034"
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 2860837171021627,
+        "value_type": "string",
+        "name": "Marca"
+      },
+      {
+        "attribute_group_id": "OTHERS",
+        "source": 2860837171021627,
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "value_id": "2230284",
+        "attribute_group_name": "Otros",
+        "value_type": "list",
+        "value_name": "Nuevo",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null,
+            "source": 2860837171021627
+          }
+        ]
+      },
+      {
+        "attribute_group_name": "Otros",
+        "source": 3376461333454861,
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_id": null,
+        "value_name": "AMD Radeon Vega 8",
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "AMD Radeon Vega 8",
+            "struct": null,
+            "source": 3376461333454861
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "value_type": "string"
+      }
+    ],
+    "original_price": 3449900,
+    "category_id": "MCO1649",
+    "official_store_id": 1555,
+    "domain_id": "MCO-DESKTOP_COMPUTERS",
+    "catalog_product_id": null,
+    "tags": [
+      "good_quality_picture",
+      "good_quality_thumbnail",
+      "standard_price_by_channel",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "order_backend": 2,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null
+  },
+  {
+    "id": "MCO879442053",
+    "site_id": "MCO",
+    "title": "Kit De Teclado Y Mouse Inalámbrico Logitech Mk235 Español De Color Negro",
+    "seller": {
+      "id": 525215061,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 95000,
+    "prices": {
+      "id": "MCO879442053",
+      "prices": [
+        {
+          "id": "5",
+          "type": "standard",
+          "amount": 95000,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-13T16:08:04Z",
+          "conditions": {
+            "context_restrictions": [],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "6",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 95000,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-10-13T16:08:05Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 11,
+    "sold_quantity": 8,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-04-02T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/kit-de-teclado-y-mouse-inalambrico-logitech-mk235-espanol-de-color-negro/p/MCO18610706",
+    "thumbnail": "http://http2.mlstatic.com/D_961801-MLA48377493379_112021-I.jpg",
+    "thumbnail_id": "961801-MLA48377493379_112021",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 2638.89,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-DC",
+      "state_name": "Bogotá D.C.",
+      "city_id": "TUNPQ0NIQTk2OTI1",
+      "city_name": "Chapinero"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "fs_threshold_mco_change_apr2021",
+        "fs_threshold_mco_change_jul2021",
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "cross_docking",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-DC",
+        "name": "Bogotá D.C."
+      },
+      "city": {
+        "id": "TUNPQ0NIQTk2OTI1",
+        "name": "Chapinero"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "name": "Marca",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "values": [
+          {
+            "source": 1,
+            "id": "15788",
+            "name": "Logitech",
+            "struct": null
+          }
+        ],
+        "source": 1,
+        "value_type": "string",
+        "id": "BRAND",
+        "value_id": "15788",
+        "value_name": "Logitech",
+        "value_struct": null
+      },
+      {
+        "value_id": null,
+        "value_name": "MK235",
+        "values": [
+          {
+            "struct": null,
+            "source": 3376461333454861,
+            "id": null,
+            "name": "MK235"
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "DETAILED_MODEL",
+        "name": "Modelo detallado",
+        "value_struct": null,
+        "source": 3376461333454861
+      },
+      {
+        "value_name": "Nuevo",
+        "attribute_group_name": "Otros",
+        "source": 3039037873642762,
+        "value_type": "list",
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "value_id": "2230284",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null,
+            "source": 3039037873642762
+          }
+        ],
+        "attribute_group_id": "OTHERS"
+      },
+      {
+        "value_id": null,
+        "value_struct": null,
+        "value_type": "string",
+        "name": "Modelo del teclado",
+        "value_name": "920-007901",
+        "values": [
+          {
+            "name": "920-007901",
+            "struct": null,
+            "source": 3376461333454861,
+            "id": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 3376461333454861,
+        "id": "KEYBOARD_MODEL"
+      },
+      {
+        "source": 1,
+        "value_type": "number_unit",
+        "id": "KEYBOARD_WEIGHT",
+        "value_struct": {
+          "number": 475,
+          "unit": "g"
+        },
+        "values": [
+          {
+            "id": "8730646",
+            "name": "475 g",
+            "struct": {
+              "number": 475,
+              "unit": "g"
+            },
+            "source": 1
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "name": "Peso del teclado",
+        "value_id": "8730646",
+        "value_name": "475 g"
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_name": "MK235",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "value_id": "4048124",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "4048124",
+            "name": "MK235",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "source": 1
+      },
+      {
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "920-007901",
+            "struct": null,
+            "source": 3376461333454861
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "name": "Modelo del mouse",
+        "value_id": null,
+        "source": 3376461333454861,
+        "id": "MOUSE_MODEL",
+        "value_name": "920-007901"
+      },
+      {
+        "values": [
+          {
+            "id": "11352176",
+            "name": "70.5 g",
+            "struct": {
+              "number": 70.5,
+              "unit": "g"
+            },
+            "source": 1
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "number_unit",
+        "id": "MOUSE_WEIGHT",
+        "value_name": "70.5 g",
+        "value_struct": {
+          "number": 70.5,
+          "unit": "g"
+        },
+        "source": 1,
+        "name": "Peso del mouse",
+        "value_id": "11352176"
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO6263",
+    "official_store_id": null,
+    "domain_id": "MCO-KEYBOARD_AND_MOUSE_KITS",
+    "catalog_product_id": "MCO18610706",
+    "tags": [
+      "good_quality_picture",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": "JSWE51573",
+    "order_backend": 3
+  },
+  {
+    "id": "MCO964679805",
+    "site_id": "MCO",
+    "title": "Disco Sólido Ssd Interno Kingston Sa400s37/240g 240gb Negro",
+    "seller": {
+      "id": 171598070,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 103322,
+    "prices": {
+      "id": "MCO964679805",
+      "prices": [
+        {
+          "id": "90",
+          "type": "standard",
+          "amount": 103322,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-23T18:19:41Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "86",
+          "type": "standard",
+          "amount": 102900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-20T21:50:54Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_mshops"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "70",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 97000,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-10-08T16:20:52Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 23,
+    "sold_quantity": 341,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-09-25T13:33:24.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/disco-solido-ssd-interno-kingston-sa400s37240g-240gb-negro/p/MCO19035706",
+    "thumbnail": "http://http2.mlstatic.com/D_804287-MLA49587128302_042022-I.jpg",
+    "thumbnail_id": "804287-MLA49587128302_042022",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 2870.06,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-TOL",
+      "state_name": "Tolima",
+      "city_id": "TUNPQ0lCQTI0NzNh",
+      "city_name": "Ibagué"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "drop_off",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-TOL",
+        "name": "Tolima"
+      },
+      "city": {
+        "id": "TUNPQ0lCQTI0NzNh",
+        "name": "Ibagué"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "value_type": "string",
+        "id": "BRAND",
+        "value_id": "16360",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "Kingston",
+            "struct": null,
+            "source": 1,
+            "id": "16360"
+          }
+        ],
+        "source": 1,
+        "name": "Marca",
+        "value_name": "Kingston",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "value_name": "Nuevo",
+        "value_struct": null,
+        "values": [
+          {
+            "struct": null,
+            "source": 3045741222775799,
+            "id": "2230284",
+            "name": "Nuevo"
+          }
+        ],
+        "source": 3045741222775799,
+        "value_type": "list",
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "value_id": "2230284",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "value_name": "A400",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "LINE",
+        "name": "Línea",
+        "value_id": "7732401",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "7732401",
+            "name": "A400",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "source": 1
+      },
+      {
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "value_type": "string",
+        "id": "MODEL",
+        "value_id": "7731780",
+        "value_name": "SA400S37/240G",
+        "value_struct": null,
+        "values": [
+          {
+            "source": 1,
+            "id": "7731780",
+            "name": "SA400S37/240G",
+            "struct": null
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "name": "Modelo"
+      },
+      {
+        "value_type": "number_unit",
+        "id": "WEIGHT",
+        "value_id": "8610993",
+        "value_struct": {
+          "number": 41,
+          "unit": "g"
+        },
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "name": "Peso",
+        "value_name": "41 g",
+        "values": [
+          {
+            "id": "8610993",
+            "name": "41 g",
+            "struct": {
+              "number": 41,
+              "unit": "g"
+            },
+            "source": 1
+          }
+        ],
+        "attribute_group_name": "Otros"
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO1672",
+    "official_store_id": null,
+    "domain_id": "MCO-HARD_DRIVES_AND_SSDS",
+    "catalog_product_id": "MCO19035706",
+    "tags": [
+      "good_quality_picture",
+      "standard_price_by_channel",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null,
+    "order_backend": 4
+  },
+  {
+    "id": "MCO936445457",
+    "site_id": "MCO",
+    "title": "Laptop Hp 240 G7 Gris 14 , Intel Celeron N4020  8gb De Ram 1tb Hdd, Intel Uhd Graphics 600 1366x768px Windows 10 Home",
+    "seller": {
+      "id": 216720321,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 905900,
+    "prices": {
+      "id": "MCO936445457",
+      "prices": [
+        {
+          "id": "9",
+          "type": "standard",
+          "amount": 1090000,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-12T04:01:55Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "16",
+          "type": "standard",
+          "amount": 869000,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-12T04:01:55Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_mshops"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "17",
+          "type": "promotion",
+          "amount": 905900,
+          "regular_amount": 1090000,
+          "currency_id": "COP",
+          "last_updated": "2022-10-22T22:56:32Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": "2021-01-05T04:30:00Z",
+            "end_time": "2024-01-01T04:59:00Z",
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {
+            "campaign_id": "MCO2298",
+            "promotion_id": "MCO2298",
+            "promotion_type": "campaign"
+          }
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "10",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 1090000,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-08-27T00:08:28Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 6,
+    "sold_quantity": 14,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-07-28T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/laptop-hp-240-g7-gris-14-intel-celeron-n4020-8gb-de-ram-1tb-hdd-intel-uhd-graphics-600-1366x768px-windows-10-home/p/MCO18941400",
+    "thumbnail": "http://http2.mlstatic.com/D_679578-MLA49695293979_042022-I.jpg",
+    "thumbnail_id": "679578-MLA49695293979_042022",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 25163.89,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-DC",
+      "state_name": "Bogotá D.C.",
+      "city_id": "TUNPQ0NIQTk2OTI1",
+      "city_name": "Chapinero"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "self_service_out",
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "cross_docking",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-DC",
+        "name": "Bogotá D.C."
+      },
+      "city": {
+        "id": "TUNPQ0NIQTk2OTI1",
+        "name": "Chapinero"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_name": "HP",
+        "values": [
+          {
+            "source": 1,
+            "id": "49944",
+            "name": "HP",
+            "struct": null
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_id": "49944",
+        "value_struct": null,
+        "source": 1,
+        "value_type": "string"
+      },
+      {
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "DETAILED_MODEL",
+        "value_id": "11728561",
+        "value_name": "1D0F6LT",
+        "values": [
+          {
+            "struct": null,
+            "source": 1,
+            "id": "11728561",
+            "name": "1D0F6LT"
+          }
+        ],
+        "name": "Modelo detallado",
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "source": 1
+      },
+      {
+        "value_name": "Nuevo",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "list",
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem",
+        "value_id": "2230284",
+        "value_struct": null,
+        "values": [
+          {
+            "source": 6808261514773724,
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null
+          }
+        ],
+        "source": 6808261514773724
+      },
+      {
+        "id": "MODEL",
+        "name": "Modelo",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "240 G7",
+            "struct": null,
+            "source": 1,
+            "id": "7875432"
+          }
+        ],
+        "source": 1,
+        "value_type": "string",
+        "value_id": "7875432",
+        "value_name": "240 G7",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros"
+      },
+      {
+        "value_name": "Intel",
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "value_type": "list",
+        "id": "PROCESSOR_BRAND",
+        "name": "Marca del procesador",
+        "value_id": "7855833",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "Intel",
+            "struct": null,
+            "source": 1,
+            "id": "7855833"
+          }
+        ],
+        "attribute_group_name": "Otros"
+      },
+      {
+        "value_id": "44273",
+        "value_name": "Celeron",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "Celeron",
+            "struct": null,
+            "source": 1,
+            "id": "44273"
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "id": "PROCESSOR_LINE",
+        "name": "Línea del procesador",
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "value_type": "string"
+      },
+      {
+        "name": "Modelo del procesador",
+        "value_name": "N4020",
+        "value_struct": null,
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "id": "PROCESSOR_MODEL",
+        "value_id": "9233933",
+        "values": [
+          {
+            "name": "N4020",
+            "struct": null,
+            "source": 1,
+            "id": "9233933"
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "value_type": "string"
+      },
+      {
+        "id": "WEIGHT",
+        "name": "Peso",
+        "value_struct": {
+          "unit": "kg",
+          "number": 1.52
+        },
+        "attribute_group_id": "OTHERS",
+        "value_id": "2222078",
+        "value_name": "1.52 kg",
+        "values": [
+          {
+            "source": 1,
+            "id": "2222078",
+            "name": "1.52 kg",
+            "struct": {
+              "number": 1.52,
+              "unit": "kg"
+            }
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "value_type": "number_unit"
+      }
+    ],
+    "original_price": 1090000,
+    "category_id": "MCO1652",
+    "official_store_id": null,
+    "domain_id": "MCO-NOTEBOOKS",
+    "catalog_product_id": "MCO18941400",
+    "tags": [
+      "good_quality_picture",
+      "standard_price_by_channel",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null,
+    "order_backend": 5
+  },
+  {
+    "id": "MCO939489276",
+    "site_id": "MCO",
+    "title": "Disco Sólido Ssd Interno Kingston Sa400s37/480g 480gb Negro",
+    "seller": {
+      "id": 503163253,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 160000,
+    "prices": {
+      "id": "MCO939489276",
+      "prices": [
+        {
+          "id": "9",
+          "type": "standard",
+          "amount": 160000,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-23T07:15:21Z",
+          "conditions": {
+            "context_restrictions": [],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "10",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 160000,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-10-23T07:15:22Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 3,
+    "sold_quantity": 16,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-08-01T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/disco-solido-ssd-interno-kingston-sa400s37480g-480gb-negro/p/MCO17978326",
+    "thumbnail": "http://http2.mlstatic.com/D_751939-MLA46221843872_052021-I.jpg",
+    "thumbnail_id": "751939-MLA46221843872_052021",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 4444.44,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-CUN",
+      "state_name": "Cundinamarca",
+      "city_id": "TUNPQ0NBSmUwZTcz",
+      "city_name": "Cajicá"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "xd_drop_off",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-CUN",
+        "name": "Cundinamarca"
+      },
+      "city": {
+        "id": "TUNPQ0NBSmUwZTcz",
+        "name": "Cajicá"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "value_id": "16360",
+        "source": 1,
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "BRAND",
+        "name": "Marca",
+        "value_name": "Kingston",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "Kingston",
+            "struct": null,
+            "source": 1,
+            "id": "16360"
+          }
+        ],
+        "attribute_group_id": "OTHERS"
+      },
+      {
+        "source": 3045741222775799,
+        "value_type": "list",
+        "value_id": "2230284",
+        "value_name": "Nuevo",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null,
+            "source": 3045741222775799
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem"
+      },
+      {
+        "id": "LINE",
+        "value_name": "A400",
+        "values": [
+          {
+            "id": "7732401",
+            "name": "A400",
+            "struct": null,
+            "source": 1
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "name": "Línea",
+        "value_id": "7732401",
+        "value_struct": null,
+        "source": 1,
+        "value_type": "string"
+      },
+      {
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "value_type": "string",
+        "id": "MODEL",
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "values": [
+          {
+            "source": 1,
+            "id": "7731781",
+            "name": "SA400S37/480G",
+            "struct": null
+          }
+        ],
+        "name": "Modelo",
+        "value_id": "7731781",
+        "value_name": "SA400S37/480G"
+      },
+      {
+        "id": "WEIGHT",
+        "name": "Peso",
+        "value_name": "41 g",
+        "values": [
+          {
+            "id": "8610993",
+            "name": "41 g",
+            "struct": {
+              "number": 41,
+              "unit": "g"
+            },
+            "source": 1
+          }
+        ],
+        "source": 1,
+        "value_id": "8610993",
+        "value_struct": {
+          "number": 41,
+          "unit": "g"
+        },
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "number_unit"
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO1672",
+    "official_store_id": null,
+    "domain_id": "MCO-HARD_DRIVES_AND_SSDS",
+    "catalog_product_id": "MCO17978326",
+    "tags": [
+      "good_quality_picture",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null,
+    "order_backend": 6
+  },
+  {
+    "id": "MCO818960598",
+    "site_id": "MCO",
+    "title": "Pc Computador Gamer Amd Ryzen 7 5700g Ssd 240 Hdd 1tb Ram 16",
+    "seller": {
+      "id": 127637522,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 3859900,
+    "prices": {
+      "id": "MCO818960598",
+      "prices": [
+        {
+          "id": "3",
+          "type": "standard",
+          "amount": 3859900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2021-12-21T15:15:44Z",
+          "conditions": {
+            "context_restrictions": [],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 1,
+    "sold_quantity": 5,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2041-10-03T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://articulo.mercadolibre.com.co/MCO-818960598-pc-computador-gamer-amd-ryzen-7-5700g-ssd-240-hdd-1tb-ram-16-_JM",
+    "thumbnail": "http://http2.mlstatic.com/D_862652-MCO47807316125_102021-I.jpg",
+    "thumbnail_id": "862652-MCO47807316125_102021",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 107219.44,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-SAN",
+      "state_name": "Santander",
+      "city_id": "TUNPQ0JVQzkzMTE4",
+      "city_name": "Bucaramanga"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "cross_docking",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-SAN",
+        "name": "Santander"
+      },
+      "city": {
+        "id": "TUNPQ0JVQzkzMTE4",
+        "name": "Bucaramanga"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "id": "BRAND",
+        "name": "Marca",
+        "value_name": "AMD",
+        "values": [
+          {
+            "source": 3376461333454861,
+            "id": "18034",
+            "name": "AMD",
+            "struct": null
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "source": 3376461333454861,
+        "value_id": "18034",
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "value_type": "string"
+      },
+      {
+        "value_name": "Nuevo",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 6808261514773724,
+        "value_type": "list",
+        "id": "ITEM_CONDITION",
+        "value_id": "2230284",
+        "value_struct": null,
+        "values": [
+          {
+            "source": 6808261514773724,
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null
+          }
+        ],
+        "name": "Condición del ítem"
+      },
+      {
+        "name": "Modelo",
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "RYZEN 7",
+            "struct": null,
+            "source": 3376461333454861
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 3376461333454861,
+        "id": "MODEL",
+        "value_name": "RYZEN 7",
+        "value_type": "string",
+        "value_id": null
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO1649",
+    "official_store_id": null,
+    "domain_id": "MCO-DESKTOP_COMPUTERS",
+    "catalog_product_id": null,
+    "tags": [
+      "loyalty_discount_eligible",
+      "good_quality_picture",
+      "good_quality_thumbnail",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate"
+    ],
+    "order_backend": 7,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": null
+  },
+  {
+    "id": "MCO943311946",
+    "site_id": "MCO",
+    "title": "Monitor Gamer Samsung F22t35 Led 22   Dark Blue Gray 100v/240v",
+    "seller": {
+      "id": 384786289,
+      "permalink": null,
+      "registration_date": null,
+      "car_dealer": false,
+      "real_estate_agency": false,
+      "tags": null
+    },
+    "price": 524739,
+    "prices": {
+      "id": "MCO943311946",
+      "prices": [
+        {
+          "id": "99",
+          "type": "standard",
+          "amount": 524739,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-19T20:26:44Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        },
+        {
+          "id": "100",
+          "type": "standard",
+          "amount": 509900,
+          "regular_amount": null,
+          "currency_id": "COP",
+          "last_updated": "2022-10-19T21:19:12Z",
+          "conditions": {
+            "context_restrictions": [
+              "channel_mshops"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "exchange_rate_context": "DEFAULT",
+          "metadata": {}
+        }
+      ],
+      "presentation": {
+        "display_currency": "COP"
+      },
+      "payment_method_prices": [],
+      "reference_prices": [
+        {
+          "id": "9",
+          "type": "min_standard",
+          "conditions": {
+            "context_restrictions": [
+              "channel_marketplace"
+            ],
+            "start_time": null,
+            "end_time": null,
+            "eligible": true
+          },
+          "amount": 524739,
+          "currency_id": "COP",
+          "exchange_rate_context": "DEFAULT",
+          "tags": [],
+          "last_updated": "2022-10-03T22:52:25Z"
+        }
+      ],
+      "purchase_discounts": []
+    },
+    "sale_price": null,
+    "currency_id": "COP",
+    "available_quantity": 3,
+    "sold_quantity": 124,
+    "buying_mode": "buy_it_now",
+    "listing_type_id": "gold_special",
+    "stop_time": "2042-08-08T04:00:00.000Z",
+    "condition": "new",
+    "permalink": "https://www.mercadolibre.com.co/monitor-gamer-samsung-f22t35-led-22-dark-blue-gray-100v240v/p/MCO17395574",
+    "thumbnail": "http://http2.mlstatic.com/D_796587-MLA46165231779_052021-I.jpg",
+    "thumbnail_id": "796587-MLA46165231779_052021",
+    "accepts_mercadopago": true,
+    "installments": {
+      "quantity": 36,
+      "amount": 14576.08,
+      "rate": 0,
+      "currency_id": "COP"
+    },
+    "address": {
+      "state_id": "CO-DC",
+      "state_name": "Bogotá D.C.",
+      "city_id": "TUNPQ0NIQTk2OTI1",
+      "city_name": "Chapinero"
+    },
+    "promotions": null,
+    "shipping": {
+      "free_shipping": true,
+      "mode": "me2",
+      "tags": [
+        "self_service_in",
+        "mandatory_free_shipping"
+      ],
+      "logistic_type": "xd_drop_off",
+      "store_pick_up": false
+    },
+    "seller_address": {
+      "id": "",
+      "comment": "",
+      "address_line": "",
+      "zip_code": "",
+      "country": {
+        "id": "CO",
+        "name": "Colombia"
+      },
+      "state": {
+        "id": "CO-DC",
+        "name": "Bogotá D.C."
+      },
+      "city": {
+        "id": "TUNPQ0NIQTk2OTI1",
+        "name": "Chapinero"
+      },
+      "latitude": "",
+      "longitude": ""
+    },
+    "attributes": [
+      {
+        "source": 3045741222775799,
+        "name": "Modelo alfanumérico",
+        "value_id": null,
+        "value_struct": null,
+        "values": [
+          {
+            "id": null,
+            "name": "LF22T350FHLXZL",
+            "struct": null,
+            "source": 3045741222775799
+          }
+        ],
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "ALPHANUMERIC_MODEL",
+        "value_name": "LF22T350FHLXZL"
+      },
+      {
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 1,
+        "id": "BRAND",
+        "name": "Marca",
+        "value_id": "206",
+        "value_name": "Samsung",
+        "value_struct": null,
+        "value_type": "string",
+        "values": [
+          {
+            "id": "206",
+            "name": "Samsung",
+            "struct": null,
+            "source": 1
+          }
+        ]
+      },
+      {
+        "value_type": "list",
+        "value_struct": null,
+        "values": [
+          {
+            "id": "2230284",
+            "name": "Nuevo",
+            "struct": null,
+            "source": 3045741222775799
+          }
+        ],
+        "value_id": "2230284",
+        "value_name": "Nuevo",
+        "attribute_group_id": "OTHERS",
+        "attribute_group_name": "Otros",
+        "source": 3045741222775799,
+        "id": "ITEM_CONDITION",
+        "name": "Condición del ítem"
+      },
+      {
+        "value_struct": null,
+        "attribute_group_id": "OTHERS",
+        "source": 3045741222775799,
+        "values": [
+          {
+            "source": 3045741222775799,
+            "id": null,
+            "name": "LF22T350",
+            "struct": null
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "LINE",
+        "name": "Línea",
+        "value_id": null,
+        "value_name": "LF22T350"
+      },
+      {
+        "value_id": "11711309",
+        "value_name": "F22T35",
+        "value_struct": null,
+        "values": [
+          {
+            "name": "F22T35",
+            "struct": null,
+            "source": 1,
+            "id": "11711309"
+          }
+        ],
+        "attribute_group_name": "Otros",
+        "value_type": "string",
+        "id": "MODEL",
+        "attribute_group_id": "OTHERS",
+        "source": 1,
+        "name": "Modelo"
+      }
+    ],
+    "original_price": null,
+    "category_id": "MCO1656",
+    "official_store_id": null,
+    "domain_id": "MCO-COMPUTER_MONITORS",
+    "catalog_product_id": "MCO17395574",
+    "tags": [
+      "standard_price_by_channel",
+      "good_quality_picture",
+      "immediate_payment",
+      "cart_eligible",
+      "best_seller_candidate",
+      "meli_choice_candidate"
+    ],
+    "catalog_listing": true,
+    "use_thumbnail_id": true,
+    "offer_score": null,
+    "offer_share": null,
+    "match_score": null,
+    "winner_item_id": null,
+    "melicoin": null,
+    "discounts": null,
+    "inventory_id": "VWRG42992",
+    "order_backend": 8
+  }
+]

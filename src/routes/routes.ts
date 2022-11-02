@@ -1,14 +1,14 @@
 import { Router } from "express";
-import db from "../db/db.config";
+// import db from "../db/db.config";
 const router = Router();
 import products from "../../products.json";
 
 router.get("/",async (_req, res) => {
-    const [rows]:any = await db.query("SELECT 1 + 1 as result");
-    console.log(rows[0]);
+    // const [rows]:any = await db.query("SELECT 1 + 1 as result");
+    // console.log(rows[0]);
     
-    const data = [{name:"jhon"},{name:"Joe"},{name:"Ander"}]
-    res.render("index",{people:data})
+    const data = [{name:"jhon"},{name:"Joe"},{name:"Ander"}];
+    res.render("index",{people:data});
 });
 
 router.get("/products", (_req, res) => {
@@ -27,7 +27,7 @@ router.get("/products", (_req, res) => {
         ${JSON.stringify(products, null, 2)}
     </pre>`);
 })
-router.get("/randomProducts", (_req, res) => {
+router.get("/randomProduct", (_req, res) => {
     res.send(`
     <style>
     *{
@@ -47,9 +47,4 @@ router.get("/randomProducts", (_req, res) => {
         }
     </pre>` );
 })
-// router.post("/sendProduct",(req,res)=>{
-//     console.log(req.body);
-//     res.send("ok");
-// })
-
 export default router ;

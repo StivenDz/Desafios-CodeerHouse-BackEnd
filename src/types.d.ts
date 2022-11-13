@@ -1,7 +1,7 @@
-
 export interface Product {
-    public id: number;
-    public title: string;
-    public price: number;
-    public stock: number;
+    id: string;
+    title: string;
+    price: number;
+    stock: number;
+    thumbnail:string;
 }

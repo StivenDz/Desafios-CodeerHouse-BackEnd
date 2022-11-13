@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { Product } from "./Product";
 
 export class FyleSystemManager {
     constructor(){
@@ -13,11 +14,11 @@ export class FyleSystemManager {
         }
     }
 
-    readData(path:string):JSON | unknown{
+    readData(path:string):Array<Product>{
         try{
             return JSON.parse(fs.readFileSync(path,"utf-8"));
         }catch(err){
-            return err
+            throw new Error(`Error reading the file in this route ${path}`);
         }
     }
 

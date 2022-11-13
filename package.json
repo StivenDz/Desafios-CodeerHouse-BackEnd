@@ -8,7 +8,7 @@
     "dev-ts": "ts-node-dev src/index.ts 9999",
     "dev-build": "concurrently \"tsc -w\" \"nodemon dist/src/index.js 9998\" ",
     "dev": "concurrently \"npm run dev-ts\" \"npm run dev-build\" ",
-    "build": "npm run tsc && node dist/src/index.js",
+    "build": "npm run tsc && node dist/src/index.js 9998",
     "build-sass": "node-sass --include-path scss src/sass/index.scss src/public/styles/index.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\" "
   },
@@ -29,6 +29,7 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "socket.io": "^4.5.3"
   }
 }

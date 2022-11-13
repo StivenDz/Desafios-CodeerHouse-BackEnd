@@ -1,7 +1,14 @@
 import { Router } from "express";
 // import db from "../db/db.config";
 const router = Router();
-import products from "../../products.json";
+import { 
+    addProduct, 
+    deleteProductById, 
+    getProductById, 
+    getProducts, 
+    randomProduct, 
+    updateProductById 
+} from "../controllers/ProductController";
 
 router.get("/",async (_req, res) => {
     // const [rows]:any = await db.query("SELECT 1 + 1 as result");
@@ -11,40 +18,12 @@ router.get("/",async (_req, res) => {
     res.render("index",{people:data});
 });
 
-router.get("/products", (_req, res) => {
-    res.send(`
-    <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing:border-box
-        }
-        body{
-            background:black
-        }
-    </style>
-    <pre style="color:white">
-        ${JSON.stringify(products, null, 2)}
-    </pre>`);
-})
-router.get("/randomProduct", (_req, res) => {
-    res.send(`
-    <style>
-    *{
-        padding:0;
-        margin:0;
-        box-sizing:border-box
-    }
-    body{
-        background:black
-    }
-    </style>
-    <pre style="color:white">
-        ${JSON.stringify(
-            (products[Math.floor(Math.random() * products.length)]), 
-            null, 
-            2)
-        }
-    </pre>` );
-})
+// product controller
+router.get("/api/randomProduct", randomProduct)
+router.get("/api/products",getProducts);
+router.get("/api/product/:id",getProductById);
+router.post("/api/product",addProduct);
+router.put("/api/product/:id",updateProductById);
+router.delete("/api/product/:id",deleteProductById);
+
 export default router ;

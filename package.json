@@ -1,14 +1,11 @@
 {
-  "name": "desafio-1",
+  "name": "desafio-2",
   "version": "1.0.0",
   "description": "POO back-end Coderhouse",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
     "ts-dev": "ts-node src/index.ts",
-    "ts": "nodemon -e ts -x \"npm run ts-dev\" ",
-    "query": "nodemon query.js"
+    "ts": "nodemon -e ts -x \"npm run ts-dev\" "
   },
   "author": "",
   "license": "ISC",

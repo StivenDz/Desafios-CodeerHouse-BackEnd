@@ -1,0 +1,19 @@
+<section class="carouselProductList">
+    <div>
+        <section>
+            <section id="carouselProductListContainer">
+                {{#each products}}
+                    {{>ProductCart}}
+                {{/each}}
+            </section>
+            <figure>
+                <div class="next" id="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="prev" id="prev">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+            </figure>
+        </section>
+    </div>
+</section>

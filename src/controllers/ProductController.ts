@@ -2,7 +2,21 @@ import { Request,Response } from "express";
 import { User } from "../models/User";
 import { Product } from "../models/Product";
 
+// import db from "../db/db.config";
+// import { randomUUID } from "crypto";
+
 const user = new User("Stiven","Diaz",19,null);
+// db.query("INSERT INTO users(userId,userName,lastName,email,address,phone) VALUES(?,?,?,?,?,?)",
+// [
+//     randomUUID(),
+//     "Stiven",
+//     "Diaz",
+//     "stivendiazh@gmail.com",
+//     "calle 8 #15-14 Gaira",
+//     "+57 3003779033"
+// ]
+// );
+
 
 const isValidProduct = (object:any):boolean =>{
     if(!object?.price || !object?.stock || !object?.title || !object?.thumbnail) return false;
@@ -10,6 +24,7 @@ const isValidProduct = (object:any):boolean =>{
 }
 
 const randomProduct = (_req:Request,res:Response) => {
+
     const products:Array<Product> = user.getProducts();
     const object:Product = (products[Math.floor(Math.random() * products.length)]);
     res.send(user.toProduct(object));

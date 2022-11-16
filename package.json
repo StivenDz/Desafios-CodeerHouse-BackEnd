@@ -1,15 +1,16 @@
 {
-  "name": "desafio-3",
+  "name": "desafio-5",
   "version": "1.0.0",
   "description": "",
   "main": "./dist/src/index.js",
   "scripts": {
     "tsc": "tsc",
+    "start": "node ./dist/src/index.js 9998",
     "dev-ts": "ts-node-dev src/index.ts 9999",
     "dev-build": "concurrently \"tsc -w\" \"nodemon dist/src/index.js 9998\" ",
     "dev": "concurrently \"npm run dev-ts\" \"npm run dev-build\" ",
     "build": "npm run tsc && npm run build-start",
-    "build-start":"script.bat && node dist/src/index.js 9998",
+    "build-start": "script.bat && node dist/src/index.js 9998",
     "build-sass": "node-sass --include-path scss src/sass/index.scss src/public/styles/index.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\" "
   },
@@ -30,6 +31,7 @@
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
     "mysql2": "^2.3.3",
     "socket.io": "^4.5.3"
   }

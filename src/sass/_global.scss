@@ -21,7 +21,8 @@ button,a{
 }
 
 body{
-    background: #151515;
+    background: #ebebeb;
+    min-height: 100vh;
 }
 
 @mixin responsive($width,$properties,$values) {

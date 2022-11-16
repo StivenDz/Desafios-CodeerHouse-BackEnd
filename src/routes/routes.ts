@@ -1,4 +1,6 @@
 import { Router } from "express";
+import fs from "fs";
+import path from "path";
 // import db from "../db/db.config";
 const router = Router();
 import { 
@@ -14,8 +16,10 @@ router.get("/",async (_req, res) => {
     // const [rows]:any = await db.query("SELECT 1 + 1 as result");
     // console.log(rows[0]);
     
-    const data = [{name:"jhon"},{name:"Joe"},{name:"Ander"}];
-    res.render("index",{people:data});
+    // const data = [{name:"jhon"},{name:"Joe"},{name:"Ander"}];
+    // res.render("index",{people:data});
+    const products = JSON.parse(fs.readFileSync(path.join(__dirname,"../../products.json"),"utf-8"));
+    res.render("index",{products});
 });
 
 // product controller

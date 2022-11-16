@@ -1,22 +1,31 @@
-import express from "express";
+import express, { Application } from "express";
 import morgan from "morgan";
 import path from "path";
 import dotenv from "dotenv";
 import router from "./routes/routes";
-import http from "http";
+import http,{Server} from "http";
+import {engine}  from 'express-handlebars';
 import {Server as SocketServer} from "socket.io";
 import Sockets from "./sockets";
 
 // Initializations
-const app = express();
-const server = http.createServer(app);
-const io = new SocketServer(server);
+const app : Application = express();
+const server : Server = http.createServer(app);
+const io: SocketServer = new SocketServer(server);
 Sockets(io);
 
 // Setting
 app.set("port",process.env.PORT || process.argv[2]);
-app.set("views",path.join(__dirname,"public/views"));
-app.set("view engine","ejs");
+app.engine('.hbs', engine({
+    defaultLayout: 'main',
+    layoutsDir: path.join(__dirname,"views", 'layouts'),
+    partialsDir: path.join(__dirname,"views", 'partials'),
+    extname: '.hbs'
+    // helpers: require('./lib/handlebars')
+  }))
+app.set('view engine', 'hbs');
+app.set("views",path.join(__dirname,"views"));
+
 const PORT = app.get("port");
 dotenv.config({ path: path.resolve(".env")});
 

@@ -1,0 +1,40 @@
+{
+  "name": "desafio-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "start": "node ./dist/src/index.js 9998",
+    "dev-ts": "ts-node-dev src/index.ts 9999",
+    "dev-build": "concurrently \"tsc -w\" \"nodemon dist/src/index.js 9998\" ",
+    "dev": "concurrently \"npm run dev-ts\" \"npm run dev-build\" ",
+    "build": "npm run tsc && npm run build-start",
+    "build-start": "script.bat && node dist/src/index.js 9998",
+    "build-sass": "node-sass --include-path scss src/sass/index.scss src/public/styles/index.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-sass\" "
+  },
+  "author": "Stiven Diaz <stivendiazh@gmaill.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.11.7",
+    "colors": "^1.4.0",
+    "concurrently": "^7.5.0",
+    "dotenv": "^16.0.3",
+    "morgan": "^1.10.0",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3",
+    "socket.io": "^4.5.3"
+  }
+}

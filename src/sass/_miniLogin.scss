@@ -1,0 +1,68 @@
+.loginContainer{
+    height: 100vh;
+    position: fixed;
+    background: rgba(36, 36, 36, 0.13);
+    backdrop-filter: blur(3px);
+    width: 100vw;
+    z-index: 99999;
+    top: 0;
+    pointer-events: all;
+    &>form{
+        width: 400px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.658);
+        border-radius: 6px;
+        box-shadow: 2px 2px 90px 0px #000000c2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px 40px;
+        position: absolute;
+        transition: transform 1s;
+        left: 50%;
+        top: 50%;
+        backdrop-filter: blur(3px);
+        animation: translate 1s .5s 1 both;
+        &>p{
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 20px;
+            width: 100%;
+            text-align: left;
+            padding-left: 12px;
+        }
+        &>input{
+            border: none;
+            outline: none;
+            height: 40px;
+            width: 100%;
+            background: rgba(15, 15, 15, 0);
+            padding: 16px 0 0 12px;
+            color: #ffffff;
+            border-bottom: 1px solid #80808078;
+            &:focus::placeholder{
+                color: #fff;
+            }
+            &:focus{
+                border-bottom: 1px solid #808080;
+                
+            }
+            margin-bottom: 30px;
+        }
+        &>button{
+            height: 45px;
+            width: 100%;
+            color: #fff;
+            background: $blueDark;
+            transition: background-color .5s;
+            &:hover{
+                background: $blueDarkHover;
+            }
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+    }
+}

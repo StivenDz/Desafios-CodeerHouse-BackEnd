@@ -32,7 +32,7 @@ export class Products{
         if(!product){
             return null
         }
-        db.UPDATE(productToUpdate);
+        db.UPDATE(id,productToUpdate);
         return true;
     }
     public static deleteProductById(id:string):boolean | null{

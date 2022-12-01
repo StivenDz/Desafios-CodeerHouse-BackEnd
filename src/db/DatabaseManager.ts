@@ -42,11 +42,11 @@ export class DatabaseManager{
             throw new Error(`Error`)
         }
     }
-    public static UPDATE(productUpdated:Product):Array<Product>{
+    public static UPDATE(id:string,productUpdated:Product):Array<Product>{
         try{
             const products = this.SELECT();
             const productsUpdated = products.map((product:Product)=>
-                product.productId === productUpdated.productId ? {...productUpdated,id:product.id,productId:product.productId} : product
+                product.productId === id ? {...productUpdated,id:product.id,productId:product.productId} : product
             );
             this.writeData(JSON.stringify(productsUpdated,null,2));
             return productsUpdated;

@@ -1,6 +1,8 @@
 # DOCUMENTATION
 #### URL : https://ecommerceapi-lz2u.onrender.com
 
+# GET
+
 ```
 GET /api/products
 GET https://ecommerceapi-lz2u.onrender.com/api/products
@@ -42,9 +44,11 @@ GET https://ecommerceapi-lz2u.onrender.com/api/products
 <br>
 <br>
 
+# GET
+
 ```
 GET /api/products/:id
-GET https://ecommerceapi-lz2u.onrender.com/api/products/
+GET https://ecommerceapi-lz2u.onrender.com/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
 ```
 
 ## Example Response
@@ -66,6 +70,157 @@ GET https://ecommerceapi-lz2u.onrender.com/api/products/
     "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
 }
 ```
+<br>
+
+## Admin methods require api key
+- POST
+- PUT
+- DELETE
+
+# POST
+
+```
+POST /api/products
+POST https://ecommerceapi-lz2u.onrender.com/api/products
+```
+
+```js
+headers:{
+    "api_key": "*********************"
+},
+body:{
+    "title": "test",
+    "price": 95000,
+    "stock": 18,
+    "thumbnail": "http://http2.mlstatic.com/D_961801-MLA48377493379_112021-F.jpg"
+}
+```
+
+## Example Response
+
+### `status(201)`
+```json
+{
+    "status": "successfully",
+    "productAdded": {
+        "title": "test",
+        "price": 95000,
+        "stock": 18,
+        "thumbnail": "http://http2.mlstatic.com/D_961801-MLA48377493379_112021-F.jpg",
+        "id": 10,
+        "productId": "7746887c-80c9-48bf-ab5a-7f785612ee3b"
+    }
+}
+```
+### `status(406)`
+```json
+{
+    "error": "missing properties"
+}
+```
+<br>
+<br>
+
+# PUT
+
+```
+PUT /api/products:id
+PUT https://ecommerceapi-lz2u.onrender.com/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
+```
+
+```js
+headers:{
+    "api_key": "*********************"
+},
+body:{
+    "title": "Laptop Dell Inspiron 3505 Gris 15.6 , Amd Ryzen 5 3450u 16gb De Ram 1tb Hdd 256gb Ssd",
+    "price": 2059900,
+    "stock": 50,
+    "thumbnail": "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
+}
+```
+
+## Example Response
+
+### `status(201)`
+```json
+{
+    "status": "successfully",
+    "oldProduct": {
+        "id": 9,
+        "productId": "9cdffcf8-8d9f-40a9-a6d0-2d63e037944d",
+        "title": "Laptop Dell Inspiron 3505 Gris 15.6 , Amd Ryzen 5 3450u 16gb De Ram 1tb Hdd 256gb Ssd",
+        "price": 2059900,
+        "stock": 18,
+        "thumbnail": "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
+    },
+    "productUpdated": {
+        "title": "Laptop Dell Inspiron 3505 Gris 15.6 , Amd Ryzen 5 3450u 16gb De Ram 1tb Hdd 256gb Ssd",
+        "price": 2059900,
+        "stock": 50,
+        "thumbnail": "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg",
+        "id": 9,
+        "productId": "9cdffcf8-8d9f-40a9-a6d0-2d63e037944d"
+    }
+}
+```
+### `status(404)`
+```json
+{
+    "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
+}
+```
+
+### `status(406)`
+```json
+{
+    "error": "missing properties"
+}
+```
+
+<br>
+<br>
+
+# DELETE
+
+```
+DELETE /api/products:id
+DELETE https://ecommerceapi-lz2u.onrender.com/api/products/7746887c-80c9-48bf-ab5a-7f785612ee3b
+```
+
+```js
+headers:{
+    "api_key": "*********************"
+}
+```
+
+## Example Response
+
+### `status(201)`
+```json
+{
+    "status": "successfully",
+    "message": "product whit id = 7746887c-80c9-48bf-ab5a-7f785612ee3b deleted",
+    "productDeleted": {
+        "title": "test",
+        "price": 95000,
+        "stock": 18,
+        "thumbnail": "http://http2.mlstatic.com/D_961801-MLA48377493379_112021-F.jpg",
+        "id": 10,
+        "productId": "7746887c-80c9-48bf-ab5a-7f785612ee3b"
+    }
+}
+```
+### `status(404)`
+```json
+{
+    "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
+}
+```
+
+
+
+
 
 
 

@@ -214,7 +214,7 @@ headers:{
 ### `status(404)`
 ```json
 {
-    "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
+    "error": "this id 7746887c-80c9-48bf-ab5a-7f785612ee3b doesn't exist"
 }
 ```
 

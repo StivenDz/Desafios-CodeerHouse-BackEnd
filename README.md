@@ -1,11 +1,11 @@
 # DOCUMENTATION
-#### URL : https://ecommerceapi-lz2u.onrender.com
+#### URL : https://ecommerceapi-coder.up.railway.app
 
 # GET
 
 ```
 GET /api/products
-GET https://ecommerceapi-lz2u.onrender.com/api/products
+GET https://ecommerceapi-coder.up.railway.app/api/products
 ```
 
 ## Example Response
@@ -51,7 +51,7 @@ GET https://ecommerceapi-lz2u.onrender.com/api/products
 
 ```
 GET /api/products/:id
-GET https://ecommerceapi-lz2u.onrender.com/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
+GET https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
 ```
 
 ## Example Response
@@ -85,7 +85,7 @@ GET https://ecommerceapi-lz2u.onrender.com/api/products/9cdffcf8-8d9f-40a9-a6d0-
 
 ```
 POST /api/products
-POST https://ecommerceapi-lz2u.onrender.com/api/products
+POST https://ecommerceapi-coder.up.railway.app/api/products
 ```
 
 ```js
@@ -130,7 +130,7 @@ body:{
 
 ```
 PUT /api/products:id
-PUT https://ecommerceapi-lz2u.onrender.com/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
+PUT https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
 ```
 
 ```js
@@ -192,7 +192,7 @@ body:{
 
 ```
 DELETE /api/products:id
-DELETE https://ecommerceapi-lz2u.onrender.com/api/products/7746887c-80c9-48bf-ab5a-7f785612ee3b
+DELETE https://ecommerceapi-coder.up.railway.app/api/products/7746887c-80c9-48bf-ab5a-7f785612ee3b
 ```
 
 ```js

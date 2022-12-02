@@ -1,8 +1,10 @@
 import fs from "fs";
 import Path from "path";
+import { randomUUID } from "crypto";
 import { Product } from "@types";
+import { SQLFunctions } from "../functions/SQLFunctions";
 
-export class DatabaseManager{
+export class ProductRepository{
     private static path:string = Path.join(__dirname,"../../products.json");
 
     private static writeData(data:string):void{
@@ -15,6 +17,12 @@ export class DatabaseManager{
     public static INSERT(product:Product):Array<Product>{
         try{
             const products = this.SELECT();
+            product = {
+                ...product,
+                id: SQLFunctions.id_AutoIncrement(products),
+                productId:randomUUID(),
+                created_At: SQLFunctions.formatDate(new Date())
+            }
             products.push(product);
             this.writeData(JSON.stringify(products,null,2));
 
@@ -65,18 +73,4 @@ export class DatabaseManager{
             throw new Error(`Error deleting ${id}`)
         }
     }
-    // public static DELETE(productToDelete:Product):boolean{
-    //     try{
-    //         const products = this.SELECT();
-
-    //         if(!this.SELECT_ID(productToDelete.productId)) return false;
-
-    //         const productsUpdated = products.filter((product:Product)=> (product.productId != productToDelete.productId));
-    //         this.writeData(JSON.stringify(productsUpdated,null,2));
-    //         return true
-
-    //     }catch(err){
-    //         throw new Error(`Error deleting ${productToDelete}`)
-    //     }
-    // }
 }

@@ -5,5 +5,13 @@ export interface Product {
     thumbnail: string,
     description: string,
     stock:number,
-    productId:string
+    productId:string,
+    created_At:string
 };
+
+export interface Cart {
+    id:number,
+    cartId:string,
+    products:Array<Product>,
+    created_At:string
+}

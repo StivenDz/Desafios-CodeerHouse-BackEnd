@@ -1,14 +1,7 @@
 import {Product} from "@types";
-import { randomUUID } from "crypto";
-import { DatabaseManager as db } from "../db/DatabaseManager";
+import { ProductRepository as db } from "../db/Product.Repository";
 
 export class Products{
-    private static id_AutoIncrement():number{
-        const products = db.SELECT();
-        
-        return (products[products.length - 1].id + 1);
-    }
-
     public static getAllProducts():Array<Product>{
         const products = db.SELECT();
         return products;
@@ -18,11 +11,6 @@ export class Products{
         return product;
     }
     public static addNewProduct(product:Product){
-        product = {
-            ...product,
-            id:this.id_AutoIncrement(),
-            productId:randomUUID()
-        }
         db.INSERT(product);
         const newProduct = this.getProductById(product.productId);
         return newProduct;

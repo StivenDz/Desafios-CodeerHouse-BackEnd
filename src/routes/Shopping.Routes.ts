@@ -2,17 +2,17 @@ import { Router } from "express"
 const router = Router();
 import {
     createNewCart,
-    clearCart,
+    deleteCartById,
     addProductToCart,
-    showAllCartProducts,
-    DeleteCartProduct,
+    getAllCartProductsByCartId,
+    deleteCartProductById,
 } from '../controllers/Shopping.Controller';
 
+router.get('/:id/products', getAllCartProductsByCartId)
 router.post('/', createNewCart)
-router.delete('/:id', clearCart)
-router.post('/:id_cart/products', addProductToCart)
-router.get('/:id_cart/products', showAllCartProducts)
-router.delete('/:id_cart/products/:id_prod', DeleteCartProduct)
+router.post('/:id/products/:productId', addProductToCart)
+router.delete('/:id', deleteCartById)
+router.delete('/:id/products/:productId', deleteCartProductById)
 
 
 export { router }

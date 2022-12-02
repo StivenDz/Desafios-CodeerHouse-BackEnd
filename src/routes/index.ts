@@ -4,6 +4,6 @@ import {router as ProductRouter} from "./Product.Routes";
 const app = express();
 
 app.use('/api/products', ProductRouter);
-app.use('/api/shopping', ShoppingRouter);
+app.use('/api/shoppingCart', ShoppingRouter);
 
 export {app}

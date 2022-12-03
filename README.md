@@ -1,5 +1,19 @@
 # DOCUMENTATION
-#### URL : https://ecommerceapi-coder.up.railway.app
+#### URL : `https://ecommerceapi-coder.up.railway.app`
+
+
+| Methods | Route                                           | Description   |
+| :---    |     :---                                        | :---          |
+| GET     | /api/products                                   | git status    |
+| GET     | /api/products/:productId                        | git diff      |
+| GET     | /api/shoppingCart/:cartId/products              | git diff      |
+| POST    | /api/products                                   | git diff      |
+| POST    | /api/shoppingCart                               | git diff      |
+| POST    | /api/shoppingCart/:cartId/products/:productId   | git diff      |
+| PUT     | /api/products/:productId                        | git diff      |
+| DELETE  | /api/products/:productId                        | git diff      |
+| DELETE  | /api/shoppingCart/:cartId                       | git diff      |
+| DELETE  | /api/shoppingCart/:cartId/products/:productId   | git diff      |
 
 # GET
 

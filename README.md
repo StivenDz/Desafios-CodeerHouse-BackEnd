@@ -424,7 +424,7 @@ DELETE https://ecommerceapi-coder.up.railway.app/api/shoppingCart/b85d0723-0e3e-
 </details>
 <br>
 <details>
-<summary>POST <b>/api/shoppingCart/:cartId/products/:productId</b></summary> 
+<summary>DELETE <b>/api/shoppingCart/:cartId/products/:productId</b></summary> 
 <br>
 
 ```js

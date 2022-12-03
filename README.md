@@ -73,7 +73,7 @@ GET https://ecommerceapi-coder.up.railway.app/api/products
 <br>
 
 
-```
+```js
 GET /api/products/:id
 GET https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
 ```
@@ -105,7 +105,7 @@ GET https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6
 <summary>GET <b>/api/shoppingCart/:cartId/products</b></summary> 
 <br>
 
-```
+```js
 GET /api/shoppingCart/:cartId/products
 GET https://ecommerceapi-coder.up.railway.app/api/shoppingCart/12345678910/products
 ```
@@ -162,7 +162,7 @@ GET https://ecommerceapi-coder.up.railway.app/api/shoppingCart/12345678910/produ
 <summary>POST <b>/api/products</b></summary> 
 <br>
 
-```
+```js
 POST /api/products
 POST https://ecommerceapi-coder.up.railway.app/api/products
 ```
@@ -208,7 +208,7 @@ body:{
 <summary>PUT <b>/api/products:id</b></summary> 
 <br>
 
-```
+```js
 PUT /api/products:id
 PUT https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6d0-2d63e037944d
 ```
@@ -270,7 +270,7 @@ body:{
 <summary>DELETE <b>/api/products:id</b></summary> 
 <br>
 
-```
+```js
 DELETE /api/products:id
 DELETE https://ecommerceapi-coder.up.railway.app/api/products/7746887c-80c9-48bf-ab5a-7f785612ee3b
 ```

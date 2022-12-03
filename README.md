@@ -2,18 +2,20 @@
 #### URL : `https://ecommerceapi-coder.up.railway.app`
 
 
-| Methods | Route                                           | Description                                                       |
-| :---    |     :---                                        | :---                                                              |
-| GET     | /api/products                                   | returns all products                                              |
-| GET     | /api/products/:productId                        | returns a product referenced by productId                         |
-| GET     | /api/shoppingCart/:cartId/products              | returns all the products of a cart referenced by the cart id      |
-| POST    | /api/products                                   | adds new product & returns the new product                        |
-| POST    | /api/shoppingCart                               | adds new cart                                                     |
-| POST    | /api/shoppingCart/:cartId/products/:productId   | adds a new product to a cart                                      |
-| PUT     | /api/products/:productId                        | updates a product referenced by product id                        |
-| DELETE  | /api/products/:productId                        | removes a product referenced by product id                        |
-| DELETE  | /api/shoppingCart/:cartId                       | cleans a cart referenced by cart id                               |
-| DELETE  | /api/shoppingCart/:cartId/products/:productId   | removes a product of a cart referenced by product id & cart id    |
+| Methods | Route                                           | Description                                                       | Require API_KEY |
+| :---    |     :---                                        | :---                                                              |  :---: |
+| GET     | /api/products                                   | returns all products                                              |   NO   |
+| GET     | /api/products/:productId                        | returns a product referenced by productId                         |   NO   |
+| GET     | /api/shoppingCart/:cartId/products              | returns all the products of a cart referenced by the cart id      |   NO   |
+| POST    | /api/products                                   | adds new product & returns the new product                        |   YES  |
+| POST    | /api/shoppingCart                               | adds new cart                                                     |   NO   |
+| POST    | /api/shoppingCart/:cartId/products/:productId   | adds a new product to a cart                                      |   NO   |
+| PUT     | /api/products/:productId                        | updates a product referenced by product id                        |   YES  |
+| DELETE  | /api/products/:productId                        | removes a product referenced by product id                        |   YES  |
+| DELETE  | /api/shoppingCart/:cartId                       | cleans a cart referenced by cart id                               |   NO   |
+| DELETE  | /api/shoppingCart/:cartId/products/:productId   | removes a product of a cart referenced by product id & cart id    |   NO   |
+
+## Methods like (POST,PUT,DELETE) in route = /api/products require API_KEY
 
 # GET
 
@@ -59,7 +61,6 @@ GET https://ecommerceapi-coder.up.railway.app/api/products
 
 <br>
 <br>
-<br>
 
 # GET
 
@@ -88,12 +89,60 @@ GET https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6
     "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
 }
 ```
-<br>
+# GET
 
-## Admin methods require api key
-- POST
-- PUT
-- DELETE
+```
+GET /api/shoppingCart/:cartId/products
+GET https://ecommerceapi-coder.up.railway.app/api/shoppingCart/12345678910/products
+```
+
+## Example Response
+
+### `status(200)`
+```json
+{
+    "id": 2,
+    "cartId": "12345678910",
+    "created_At": "01/12/2022 22:36:56",
+    "products": [
+        {
+            "id": 1,
+            "productId": "MCO967705850",
+            "title": "Laptop Asus M515da Gris 15.6 , Amd Ryzen 5 3500u  16gb De Ram 1tb Hdd 256gb Ssd, Amd Radeon Rx Vega 8 (ryzen 2000/3000) 1920x1080px Windows 10",
+            "price": 1999900,
+            "stock": 7,
+            "thumbnail": "http://http2.mlstatic.com/D_894333-MLA51165023913_082022-F.jpg",
+            "created_At": "01/12/2022 22:36:56"
+        },
+        {
+            "id": 2,
+            "productId": "MCO657791576",
+            "title": "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
+            "price": 3049900,
+            "stock": 1,
+            "thumbnail": "http://http2.mlstatic.com/D_661268-MCO47189663977_082021-F.jpg",
+            "created_At": "01/12/2022 22:36:56"
+        },
+        {
+            "id": 3,
+            "productId": "MCO879442053",
+            "title": "Kit De Teclado Y Mouse Inalámbrico Logitech Mk235 Español De Color Negro",
+            "price": 95000,
+            "stock": 11,
+            "thumbnail": "http://http2.mlstatic.com/D_961801-MLA48377493379_112021-F.jpg",
+            "created_At": "01/12/2022 22:36:56"
+        }
+    ]
+}
+```
+### `status(404)`
+```json
+{
+    "error": "This cartId = 12345678910 doesn't exist"
+}
+```
+
+<br>
 
 # POST
 

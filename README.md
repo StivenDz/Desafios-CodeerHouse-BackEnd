@@ -367,7 +367,7 @@ headers:{
 
 ## Example Response
 
-### `status(201)`
+### `status(200)`
 ```json
 {
     "status": "successfully",
@@ -391,8 +391,71 @@ headers:{
 ```
 </details>
 <br>
+<details>
+<summary>DELETE <b>/api/shoppingCart/:cartId</b></summary> 
+<br>
 
+```js
+DELETE /api/shoppingCart/:cartId
+DELETE https://ecommerceapi-coder.up.railway.app/api/shoppingCart/b85d0723-0e3e-48a2-8b83-c37d3a05960c
+```
 
+## Example Response
+
+### `status(200)`
+```json
+{
+    "state": "successfully",
+    "message": "products in cart with Cartid = b85d0723-0e3e-48a2-8b83-c37d3a05960c was restored",
+    "cart": {
+        "id": 5,
+        "cartId": "b85d0723-0e3e-48a2-8b83-c37d3a05960c",
+        "created_At": "03/12/2022 18:23:56",
+        "products": []
+    }
+}
+```
+### `status(404)`
+```json
+{
+    "error": "This cartId = b85d0723-0e3e-48a2-8b83-c37d3a05960 doesn't exist"
+}
+```
+</details>
+<br>
+<details>
+<summary>POST <b>/api/shoppingCart/:cartId/products/:productId</b></summary> 
+<br>
+
+```js
+DELETE /api/shoppingCart/:cartId/products/:productId
+DELETE https://ecommerceapi-coder.up.railway.app/api/shoppingCart/b85d0723-0e3e-48a2-8b83-c37d3a05960c/products/MCO657791576
+```
+
+## Example Response
+
+### `status(200)`
+```json
+{
+    "state": "successfully",
+    "message": "product with id = MCO657791576 was deleted correctly in cart with id = b85d0723-0e3e-48a2-8b83-c37d3a05960c"
+}
+```
+
+### `status(404)`
+```json
+{
+    "error": "This productId = b85d0723-0e3e-48a2-8b83-c37d3a05960c doesn't exist"
+}
+```
+### `status(404)`
+```json
+{
+    "error": "This cartId = b85d0723-0e3e-48a2-8b83-c37d3a05960 doesn't exist"
+}
+```
+</details>
+<br>
 
 
 

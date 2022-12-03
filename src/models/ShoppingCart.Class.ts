@@ -20,11 +20,10 @@ export class ShoppingCart{
         return product
     }
 
-    public static deleteCartById(cartId:string){
+    public static clearCartById(cartId:string):Cart|null{
         const cart = this.getAllCartProductsByCartId(cartId);
         if(!cart) return null
-        db.DELETE(cartId);
-        return true;
+        return db.DELETE(cartId);
     }
 
     public static deleteCartProductById(cartId:string,productId:string){

@@ -63,12 +63,12 @@ export class ShoppingCartRepository {
 
     }
 
-    public static DELETE(cartId: string) {
+    public static DELETE(cartId: string):Cart {
         try {
             const ShoppingCarts = this.SELECT();
-            const ShoppingCartsUpdated = ShoppingCarts.filter((cart: Cart) => cart.cartId !== cartId)
+            const ShoppingCartsUpdated = ShoppingCarts.map((cart: Cart) => cart.cartId == cartId ? {...cart,products:[]} : cart)
             this.writeData(JSON.stringify(ShoppingCartsUpdated, null, 2));
-
+            return ShoppingCartsUpdated.filter((cart:Cart)=> cart.cartId === cartId)[0]
         } catch (err) {
             throw new Error(`Error adding new product in cart with id: ${cartId}`)
         }

@@ -46,9 +46,9 @@ const addProductToCart = (req:Request, res:Response) => {
     }
 };
 
-const deleteCartById = (req:Request, res:Response) => {
+const clearCartById = (req:Request, res:Response) => {
     const {id} = req.params;
-    const response = ShoppingCart.deleteCartById(id);
+    const response = ShoppingCart.clearCartById(id);
     if(!response){
         res.status(404);
         res.json({error:`This cartId = ${id} doesn't exist`})
@@ -56,7 +56,8 @@ const deleteCartById = (req:Request, res:Response) => {
         res.status(200);
         res.json({
             state:"successfully",
-            message:`cart with id = ${id} was deleted correctly`
+            message:`products in cart with Cartid = ${id} was restored`,
+            cart:response
         })
     }
 };
@@ -85,7 +86,7 @@ const deleteCartProductById = (req:Request, res:Response) => {
 
 export {
     createNewCart,
-    deleteCartById,
+    clearCartById,
     addProductToCart,
     getAllCartProductsByCartId,
     deleteCartProductById,

@@ -2,7 +2,7 @@ import { Router } from "express"
 const router = Router();
 import {
     createNewCart,
-    deleteCartById,
+    clearCartById,
     addProductToCart,
     getAllCartProductsByCartId,
     deleteCartProductById,
@@ -11,7 +11,7 @@ import {
 router.get('/:id/products', getAllCartProductsByCartId)
 router.post('/', createNewCart)
 router.post('/:id/products/:productId', addProductToCart)
-router.delete('/:id', deleteCartById)
+router.delete('/:id', clearCartById)
 router.delete('/:id/products/:productId', deleteCartProductById)
 
 

@@ -14,8 +14,12 @@
 | DELETE  | /api/products/:productId                        | removes a product referenced by product id                        |   YES  |
 | DELETE  | /api/shoppingCart/:cartId                       | cleans a cart referenced by cart id                               |   NO   |
 | DELETE  | /api/shoppingCart/:cartId/products/:productId   | removes a product of a cart referenced by product id & cart id    |   NO   |
+<br>
 
-## Methods like (POST,PUT,DELETE) in route = /api/products require API_KEY
+```js
+ Methods like POST,PUT,DELETE in route /api/products require API_KEY
+```
+<br>
 
 # GET
 

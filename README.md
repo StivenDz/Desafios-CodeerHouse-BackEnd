@@ -2,18 +2,18 @@
 #### URL : `https://ecommerceapi-coder.up.railway.app`
 
 
-| Methods | Route                                           | Description   |
-| :---    |     :---                                        | :---          |
-| GET     | /api/products                                   | git status    |
-| GET     | /api/products/:productId                        | git diff      |
-| GET     | /api/shoppingCart/:cartId/products              | git diff      |
-| POST    | /api/products                                   | git diff      |
-| POST    | /api/shoppingCart                               | git diff      |
-| POST    | /api/shoppingCart/:cartId/products/:productId   | git diff      |
-| PUT     | /api/products/:productId                        | git diff      |
-| DELETE  | /api/products/:productId                        | git diff      |
-| DELETE  | /api/shoppingCart/:cartId                       | git diff      |
-| DELETE  | /api/shoppingCart/:cartId/products/:productId   | git diff      |
+| Methods | Route                                           | Description                                                       |
+| :---    |     :---                                        | :---                                                              |
+| GET     | /api/products                                   | returns all products                                              |
+| GET     | /api/products/:productId                        | returns a product referenced by productId                         |
+| GET     | /api/shoppingCart/:cartId/products              | returns all the products of a cart referenced by the cart id      |
+| POST    | /api/products                                   | adds new product & returns the new product                        |
+| POST    | /api/shoppingCart                               | adds new cart                                                     |
+| POST    | /api/shoppingCart/:cartId/products/:productId   | adds a new product to a cart                                      |
+| PUT     | /api/products/:productId                        | updates a product referenced by product id                        |
+| DELETE  | /api/products/:productId                        | removes a product referenced by product id                        |
+| DELETE  | /api/shoppingCart/:cartId                       | cleans a cart referenced by cart id                               |
+| DELETE  | /api/shoppingCart/:cartId/products/:productId   | removes a product of a cart referenced by product id & cart id    |
 
 # GET
 

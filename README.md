@@ -66,9 +66,12 @@ GET https://ecommerceapi-coder.up.railway.app/api/products
 ```
 </details>
 <br>
+
+<details>
+<summary>GET <b>/api/products/:id</b></summary> 
+
 <br>
 
-# GET
 
 ```
 GET /api/products/:id
@@ -95,7 +98,12 @@ GET https://ecommerceapi-coder.up.railway.app/api/products/9cdffcf8-8d9f-40a9-a6
     "error": "this id 9cdffcf8-8d9f-40a9-a6d0-2d63e037944d doesn't exist"
 }
 ```
-# GET
+
+</details>
+<br>
+<details>
+<summary>GET <b>/api/shoppingCart/:cartId/products</b></summary> 
+<br>
 
 ```
 GET /api/shoppingCart/:cartId/products
@@ -147,10 +155,12 @@ GET https://ecommerceapi-coder.up.railway.app/api/shoppingCart/12345678910/produ
     "error": "This cartId = 12345678910 doesn't exist"
 }
 ```
+</details>
 
 <br>
-
-# POST
+<details>
+<summary>POST <b>/api/products</b></summary> 
+<br>
 
 ```
 POST /api/products
@@ -192,10 +202,11 @@ body:{
     "error": "missing properties"
 }
 ```
+</details>
 <br>
+<details>
+<summary>PUT <b>/api/products:id</b></summary> 
 <br>
-
-# PUT
 
 ```
 PUT /api/products:id
@@ -253,11 +264,11 @@ body:{
     "error": "missing properties"
 }
 ```
-
+</details>
 <br>
+<details>
+<summary>DELETE <b>/api/products:id</b></summary> 
 <br>
-
-# DELETE
 
 ```
 DELETE /api/products:id
@@ -294,6 +305,8 @@ headers:{
     "error": "this id 7746887c-80c9-48bf-ab5a-7f785612ee3b doesn't exist"
 }
 ```
+</details>
+<br>
 
 
 

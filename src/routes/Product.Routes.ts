@@ -11,7 +11,6 @@ import {
 
 router.get('/', getAllProducts)
 router.get('/:id', getProductById)
-
 router.post('/',validApiKey, addNewProduct)
 router.put('/:id',validApiKey, updateProductById)
 router.delete('/:id',validApiKey, deleteProductById)

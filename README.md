@@ -21,13 +21,15 @@
 ```
 <br>
 
-# GET
+<details>
+<summary>GET <b>/api/products</b></summary> 
 
-```
+<br>
+
+```js
 GET /api/products
 GET https://ecommerceapi-coder.up.railway.app/api/products
 ```
-
 ## Example Response
 
 ### `status(200)`
@@ -62,7 +64,7 @@ GET https://ecommerceapi-coder.up.railway.app/api/products
     }
 ]
 ```
-
+</details>
 <br>
 <br>
 

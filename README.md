@@ -205,6 +205,90 @@ body:{
 </details>
 <br>
 <details>
+<summary>POST <b>/api/shoppingCart</b></summary> 
+<br>
+
+```js
+POST /api/shoppingCart
+POST https://ecommerceapi-coder.up.railway.app/api/shoppingCart
+```
+
+## Example Response
+
+### `status(201)`
+```json
+{
+    "state": "successfully",
+    "message": "cart created correctly",
+    "cart": {
+        "id": 5,
+        "cartId": "b85d0723-0e3e-48a2-8b83-c37d3a05960c",
+        "created_At": "03/12/2022 18:23:56",
+        "products": []
+    }
+}
+```
+</details>
+<br>
+<details>
+<summary>POST <b>/api/shoppingCart/:cartId/products/:productId</b></summary> 
+<br>
+
+```js
+POST /api/shoppingCart/:cartId/products/:productId
+POST https://ecommerceapi-coder.up.railway.app/api/shoppingCart/b85d0723-0e3e-48a2-8b83-c37d3a05960c/products/MCO657791576
+```
+
+## Example Response
+
+### `status(201)`
+```json
+{
+    "state": "successfully",
+    "message": "product added to cart with id = MCO657791576 correctly",
+    "product": {
+        "id": 2,
+        "productId": "MCO657791576",
+        "title": "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
+        "price": 3049900,
+        "stock": 1,
+        "thumbnail": "http://http2.mlstatic.com/D_661268-MCO47189663977_082021-F.jpg",
+        "created_At": "01/12/2022 22:36:56"
+    },
+    "cart": {
+        "id": 5,
+        "cartId": "b85d0723-0e3e-48a2-8b83-c37d3a05960c",
+        "created_At": "03/12/2022 18:23:56",
+        "products": [
+            {
+                "id": 2,
+                "productId": "MCO657791576",
+                "title": "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
+                "price": 3049900,
+                "stock": 1,
+                "thumbnail": "http://http2.mlstatic.com/D_661268-MCO47189663977_082021-F.jpg",
+                "created_At": "01/12/2022 22:36:56"
+            }
+        ]
+    }
+}
+```
+
+### `status(404)`
+```json
+{
+    "error": "This productId = b85d0723-0e3e-48a2-8b83-c37d3a05960c doesn't exist"
+}
+```
+### `status(404)`
+```json
+{
+    "error": "This cartId = b85d0723-0e3e-48a2-8b83-c37d3a05960 doesn't exist"
+}
+```
+</details>
+<br>
+<details>
 <summary>PUT <b>/api/products:productId</b></summary> 
 <br>
 

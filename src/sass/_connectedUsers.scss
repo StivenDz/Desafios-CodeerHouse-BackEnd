@@ -1,0 +1,157 @@
+.usersOnline {
+    z-index: 7999;
+    width: 350px;
+    min-height: 100vh;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    &>&Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 16px 5px;
+
+        &>h4 {
+            color: #B0B3B8;
+            font-size: 1.0625rem;
+            font-weight: 600;
+        }
+
+        &>div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 7px;
+            height: 100%;
+
+            &>figure {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                width: 36px;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &:hover {
+                    background: $greyStandarLigth;
+                }
+            }
+        }
+    }
+
+    .userOnline {
+        padding: 0 8px;
+        &>div{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            padding: 0 8px;
+            border-radius: 8px;
+            &:hover{
+                background: rgba(255, 255, 255, 0.1);
+            }
+            &>div{
+                display: flex;
+                border-radius: 8px 8px 0 0;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                height: 100%;
+                color: white;
+        
+                &>figure {
+                    position: relative;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin: 8px 0;
+                    &>img {
+                        width: 36px;
+                        height: 36px;
+                        border-radius: 50%;
+                    }
+        
+                    &>span {
+                        height: 14px;
+                        width: 14px;
+                        border-radius: 50%;
+                        background: #31A24C;
+                        border: 2px solid #242526;
+                        position: absolute;
+                        z-index: 100;
+                        bottom: -1px;
+                        right: -4px;
+                    }
+                }
+    
+                &>span{
+                    font-size: .9375rem;
+                    text-align: left;
+                    color: #E4E6EB;
+                    word-wrap: break-word;
+                    font-weight: 500;
+                    line-height: 1.3333;
+                    padding: 12px 0;
+                }
+            }
+
+        }
+    }
+
+    .availableGruops{
+        margin-top: 8px;
+        border-top: 1px solid $greyStandarLigthX2;
+        padding: 0 0 100px;
+        @extend  .userOnline;
+        h4{
+            padding: 16px 16px 5px;
+            color: #B0B3B8;
+            font-size: 1.0625rem;
+            font-weight: 600;
+        }
+
+        .createGroup{
+            padding: 0 8px;
+            &>div{
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                padding: 0 8px;
+                border-radius: 8px;
+                gap: 12px;
+                &:hover{
+                    background: rgba(255, 255, 255, 0.1);
+                }
+                &>figure {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 8px 0;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background: $greyStandarLigthX2;
+                    color: #fff;
+                }
+                &>span {
+                    font-size: .9375rem;
+                    text-align: left;
+                    color: #E4E6EB;
+                    word-wrap: break-word;
+                    font-weight: 500;
+                    line-height: 1.3333;
+                    padding: 12px 0;
+                }
+            }
+        }
+    }
+}

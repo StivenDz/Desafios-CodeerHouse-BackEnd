@@ -2,19 +2,13 @@ import {db} from "../configs/db.config";
 // import { Product } from "../types";
 
 export class ProductTable {
+    static async CheckTableExistence(){
+      const [result] = await db.query("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE  TABLE_NAME = 'products' LIMIT 1")
+      return result
+    }
 
     static async CREATE_TABLE(){
-        return await db.query(`
-        CREATE TABLE products(
-            id INTEGER AUTO_INCREMENT NOT NULL,
-            productId VARCHAR(60) NOT NULL,
-            title VARCHAR(255) NOT NULL,
-            price INTEGER NOT NULL,
-            stock INTEGER NOT NULL,
-            thumbnail VARCHAR(255) NOT NULL,
-            created_At TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-            PRIMARY KEY(id)
-        )`)
+        return await db.query("CREATE TABLE products(id INTEGER AUTO_INCREMENT PRIMARY KEY NOT NULL,productId VARCHAR(60) NOT NULL,title VARCHAR(255) NOT NULL,price INTEGER NOT NULL,stock INTEGER NOT NULL,thumbnail VARCHAR(255) NOT NULL,created_At TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP)")
     }
 
     static async INSERT(productId:string,title:string,price:number,thumbnail:string,stock:number){

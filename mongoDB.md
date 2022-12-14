@@ -1,5 +1,8 @@
+```
 use ecommerce;
+```
 
+```js
 db.products.insertOne({
     productId: "MCO967705850",
     title: "Laptop Asus M515da Gris 15.6 , Amd Ryzen 5 3500u  16gb De Ram 1tb Hdd 256gb Ssd, Amd Radeon Rx Vega 8 (ryzen 2000/3000) 1920x1080px Windows 10",
@@ -13,7 +16,8 @@ response:
         "acknowledged" : true,
         "insertedId" : ObjectId("639a3f1c77126764a5b03556")
 }
-
+```
+```js
 db.messages.insertOne({
     userId: 1,
     userName: 'Stiven',
@@ -25,8 +29,8 @@ response:
         "acknowledged" : true,
         "insertedId" : ObjectId("639a407b77126764a5b03557")
 }
-
-
+```
+```js
 db.products.insertMany([{
     productId: "MCO657791576",
     title: "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
@@ -98,8 +102,8 @@ response:
                 ObjectId("639a449e77126764a5b0355f")
         ]
 }
-
-
+```
+```js
 db.messages.insertMany([{
     userId:1,
     userName: "Stiven",
@@ -155,8 +159,8 @@ response:
                 ObjectId("639a472177126764a5b03567")
         ]
 }
-
-
+```
+```js
 db.products.find().pretty();
 
 response:
@@ -232,8 +236,8 @@ response:
         "stock" : 25,
         "thumbnail" : "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
 }
-
-
+```
+```js
 db.messages.find().pretty();
 
 response:
@@ -291,15 +295,19 @@ response:
         "userName" : "Michell",
         "message" : "Muy bien nojoda!"
 }
-
-
+```
+```js
 db.products.countDocuments();
-9
 
+response: 9
+```
+```js
 db.messages.countDocuments();
-9
 
+response: 9
+```
 
+```js
 db.products.insertOne({
     productId: "MCO967705850",
     title: "Laptop Asus M515da Gris 15.6 , Amd Ryzen 5 3500u  16gb De Ram 1tb Hdd 256gb Ssd, Amd Radeon Rx Vega 8 (ryzen 2000/3000) 1920x1080px Windows 10",
@@ -308,7 +316,13 @@ db.products.insertOne({
     thumbnail: "http://http2.mlstatic.com/D_894333-MLA51165023913_082022-F.jpg"
 });
 
-
+response:
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("639a3f1c77126764a5b03556")
+}
+```
+```js
 db.products.find( { price: { $lt: 700000 }}).pretty();
 
 response:
@@ -344,7 +358,8 @@ response:
         "stock" : 3,
         "thumbnail" : "http://http2.mlstatic.com/D_796587-MLA46165231779_052021-F.jpg"
 }
-
+```
+```js
 db.products.find( { price: { $gte: 400000,$lt:2000000 }}).pretty();
 
 response:
@@ -372,7 +387,8 @@ response:
         "stock" : 3,
         "thumbnail" : "http://http2.mlstatic.com/D_796587-MLA46165231779_052021-F.jpg"
 }
-
+```
+```js
 db.products.find( { price: { $gte: 700000}}).pretty();
 
 response:
@@ -416,18 +432,22 @@ response:
         "stock" : 25,
         "thumbnail" : "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
 }
-
-
+```
+```js
 db.products.updateMany( {},{ $set: { stock:100 }});
 
 response:
 { "acknowledged" : true, "matchedCount" : 9, "modifiedCount" : 9 }
-
-
+```
+```js
 db.products.updateMany({price: {$gte:1400000}},{ $set: { stock:0 }});
+
 response:
 { "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
-
+```
+```js
 db.products.deleteMany({price: {$lt:300000}});
+
 response:
 { "acknowledged" : true, "deletedCount" : 3 }
+```

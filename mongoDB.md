@@ -453,3 +453,18 @@ db.products.deleteMany({price: {$lt:300000}});
 response:
 { "acknowledged" : true, "deletedCount" : 3 }
 ```
+
+```js
+db.createUser(
+  {
+    user: "pepe",
+    pwd: "asd456",
+    roles: [
+       { role: "read", db: "ecommerce" }
+    ]
+  }
+)
+
+response:
+{ ok: 1 }
+```

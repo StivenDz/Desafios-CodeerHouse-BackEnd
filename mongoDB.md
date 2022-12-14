@@ -466,5 +466,13 @@ db.createUser(
 )
 
 response:
-{ ok: 1 }
+Successfully added user: {
+        "user" : "pepe",
+        "roles" : [
+           {
+               "role" : "read",
+               "db" : "ecommerce"
+            }
+        ]
+}
 ```

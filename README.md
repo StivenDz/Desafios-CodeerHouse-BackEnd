@@ -1,8 +1,23 @@
+<div align="center">
+
+![image](https://user-images.githubusercontent.com/90875320/207772368-7a08defd-219a-47b5-991e-684e6468208f.png)
+
+![image](https://user-images.githubusercontent.com/90875320/207772416-86f18323-c1d7-4cab-b602-05b13820b783.png)
+</div>
+
+<br>
+<br>
+<br>
+
+## CREATE Database Ecommerce
+
 ```
 use ecommerce;
 
 response: switched to db ecommerce
 ```
+
+## CREATE products Collection 
 
 ```js
 db.products.insertOne({
@@ -19,6 +34,9 @@ response:
         "insertedId" : ObjectId("639a3f1c77126764a5b03556")
 }
 ```
+
+## CREATE messages Collection 
+
 ```js
 db.messages.insertOne({
     userId: 1,
@@ -32,6 +50,8 @@ response:
         "insertedId" : ObjectId("639a407b77126764a5b03557")
 }
 ```
+## INSERT products into products Collection 
+
 ```js
 db.products.insertMany([{
     productId: "MCO657791576",
@@ -105,6 +125,9 @@ response:
         ]
 }
 ```
+
+## INSERT messages into messages Collection 
+
 ```js
 db.messages.insertMany([{
     userId:1,
@@ -162,6 +185,9 @@ response:
         ]
 }
 ```
+
+## SELECT products from products Collection 
+
 ```js
 db.products.find().pretty();
 
@@ -239,6 +265,8 @@ response:
         "thumbnail" : "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
 }
 ```
+## SELECT messages from messages Collection 
+
 ```js
 db.messages.find().pretty();
 
@@ -298,16 +326,24 @@ response:
         "message" : "Muy bien nojoda!"
 }
 ```
+
+## SELECT COUNT("*") from products Collection 
+
 ```js
 db.products.countDocuments();
 
 response: 9
 ```
+
+## SELECT COUNT("*") from messages Collection 
+
 ```js
 db.messages.countDocuments();
 
 response: 9
 ```
+
+## INSERT product into products Collection 
 
 ```js
 db.products.insertOne({
@@ -324,6 +360,9 @@ response:
         "insertedId" : ObjectId("639a3f1c77126764a5b03556")
 }
 ```
+
+## SELECT products FROM products Collection WHERE price < 700000
+
 ```js
 db.products.find( { price: { $lt: 700000 }}).pretty();
 
@@ -361,6 +400,9 @@ response:
         "thumbnail" : "http://http2.mlstatic.com/D_796587-MLA46165231779_052021-F.jpg"
 }
 ```
+
+## SELECT products FROM products Collection WHERE price > 400000 AND price < 2000000
+
 ```js
 db.products.find( { price: { $gte: 400000,$lt:2000000 }}).pretty();
 
@@ -390,6 +432,9 @@ response:
         "thumbnail" : "http://http2.mlstatic.com/D_796587-MLA46165231779_052021-F.jpg"
 }
 ```
+
+## SELECT products FROM products Collection WHERE price > 700000
+
 ```js
 db.products.find( { price: { $gte: 700000}}).pretty();
 
@@ -435,24 +480,35 @@ response:
         "thumbnail" : "https://http2.mlstatic.com/D_921052-MLA47215256520_082021-O.jpg"
 }
 ```
+
+## UPDATE products SET stock = 100
+
 ```js
 db.products.updateMany( {},{ $set: { stock:100 }});
 
 response:
 { "acknowledged" : true, "matchedCount" : 9, "modifiedCount" : 9 }
 ```
+
+## UPDATE products SET stock = 0 WHERE price > 1400000
+
 ```js
 db.products.updateMany({price: {$gte:1400000}},{ $set: { stock:0 }});
 
 response:
 { "acknowledged" : true, "matchedCount" : 4, "modifiedCount" : 4 }
 ```
+
+## DELETE FROM products WHERE price < 300000;
+
 ```js
 db.products.deleteMany({price: {$lt:300000}});
 
 response:
 { "acknowledged" : true, "deletedCount" : 3 }
 ```
+
+## Create new user
 
 ```js
 db.createUser(

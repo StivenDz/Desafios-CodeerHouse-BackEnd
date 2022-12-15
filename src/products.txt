@@ -1,0 +1,42 @@
+[
+  {
+    userId:1
+    userName: "Stiven",
+    message: "Como va todo?"
+  },
+  {
+    userId:2
+    userName: "Michell",
+    message: "Hola Bebé, muy bien. ¿y tú?"
+  },
+  {
+    userId:1
+    userName: "Stiven",
+    message: "Me alegra, yo muy bien gracias a Dios!",
+  },
+  {
+    userId:2
+    userName: "Michell",
+    message: "gracias!!"
+  },
+  {
+    userId:3
+    userName: "Laura",
+    message: "Que tal gente???"
+  },
+  {
+    userId:1
+    userName: "Stiven",
+    message: "Hola Lau!"
+  },
+  {
+    userId:3
+    userName: "Laura",
+    message: "Como vas?"
+  },
+  {
+    userId:2
+    userName: "Michell",
+    message: "Muy bien nojoda!"
+  }
+]

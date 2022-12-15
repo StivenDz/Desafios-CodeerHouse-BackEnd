@@ -1,4 +1,4 @@
-import {db} from "../configs/db.config";
+import {db, database as Table} from "../configs/db.config";
 // import { Product } from "../types";
 
 export class ProductTable {
@@ -17,19 +17,25 @@ export class ProductTable {
     }
   
     static async SELECT(){
-      const [products] = await db.query("SELECT * FROM products");
+      // const [products] = await db.query("SELECT * FROM products");
+      const products = await Table("products").select("*");
       return products
     }
     static async SELECT_ID(productId:string){
-      const [product] = await db.query("SELECT * FROM products WHERE productId = ?", [productId]);
+      // const [product] = await db.query("SELECT * FROM products WHERE productId = ?", [productId]);
+      const product = await Table("products").select("*").where("productId","=" ,productId);
       return JSON.parse(JSON.stringify(product))[0];
     }
     static async UPDATE(productId:string,title:string,price:number,thumbnail:string,stock:number){
-        const [res] = await db.query("UPDATE products SET title = IFNULL(?, title) , price = IFNULL(?, price) , stock = IFNULL(?, stock) , thumbnail = IFNULL(?, thumbnail) WHERE productId = ?", [title,price,stock,thumbnail,productId]);
+        // const [res] = await db.query("UPDATE products SET title = IFNULL(?, title) , price = IFNULL(?, price) , stock = IFNULL(?, stock) , thumbnail = IFNULL(?, thumbnail) WHERE productId = ?", [title,price,stock,thumbnail,productId]);
+
+        const res = await Table("products").update({title,price,thumbnail,stock}).where("productId","=",productId)
         return res;
     }
     static async DELETE(productId:string){
-      return await db.query("DELETE FROM products WHERE productId = ?", [productId]);
+      // return await db.query("DELETE FROM products WHERE productId = ?", [productId]);
+
+      return await Table("products").delete().where({productId});
     }
   }
   

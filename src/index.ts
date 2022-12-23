@@ -1,12 +1,15 @@
 import express,{Application} from "express";
 import {green,bgBlue,red} from "colors";
 import { Connections } from "./connections/index.Connections";
-// import { ProductCollection } from "./databases/Firebase/Product.Collection";
+import { Firebase } from "./connections/Firebase.Client";
+import { firebaseConfig } from "./configs/Firebase.config";
+import { ProductCollection } from "./databases/Firebase/Product.Collection";
 
 // Initializations
 const app:Application = express();
 
 // Database Connections
+export const FirebaseConnection = new Firebase(firebaseConfig).connect()
 Connections.execute()
     .then( (data) => {
         console.table(data);
@@ -16,19 +19,13 @@ Connections.execute()
         console.table(err);
         console.error(red("Error Connecting to Databases❗❗❗"));
     })
+ProductCollection.SELECT();
 
 // Configurations
 app.set("port",process.env.PORT || process.argv[2]);
 const PORT = app.get("port");
 
 // Middleweares
-// ProductCollection.CREATE({
-//     productId: "MCO657791576",
-//     title: "Torre Cpu Gamer Ryzen 7 5700g Vega 8 1tb 16gb Pc",
-//     price: 3049900,
-//     stock: 1,
-//     thumbnail: "http://http2.mlstatic.com/D_661268-MCO47189663977_082021-F.jpg"
-// }).then(res=>console.log(res))
 
 // Routes
 

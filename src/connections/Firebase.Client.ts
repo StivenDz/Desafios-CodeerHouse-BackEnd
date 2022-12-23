@@ -1,4 +1,4 @@
-import firebase from "firebase-admin";
+import {initializeApp} from "firebase/app";
 
 export class Firebase{
     public config:object;
@@ -7,10 +7,8 @@ export class Firebase{
     }
     public async connect(){
         try{
-            return firebase.initializeApp({
-                credential: firebase.credential.cert(this.config)
-                // databaseURL:"https://ecommerce-5021a.firebaseio.com"
-            })
+            const app = initializeApp(this.config);
+            return app;
         }catch(err){
             return null;
         }

@@ -1,10 +1,10 @@
 import { MongoDB } from "./MongoDB.Client";
 import { MySQLDB } from "./MySQL.Client";
-import { Firebase } from "./Firebase.Client";
 
 import { dbConfig as MongoConfig } from "../configs/MongoDB.config";
 import { dbConfig as MySQLConfig } from "../configs/MySQL.config";
-import { firebaseConfig } from "../configs/Firebase.config";
+
+import { FirebaseConnection as Firebase } from "..";
 
 export class Connections{
     public static async execute(){
@@ -12,7 +12,7 @@ export class Connections{
             try{
                 const MongoDBConnection = await new MongoDB(MongoConfig.development).connect();
                 const MySQLConnection = await new MySQLDB(MySQLConfig.development).connect();
-                const FirebaseConnection = await new Firebase(firebaseConfig).connect()
+                const FirebaseConnection = await Firebase;
                 
                 if(!MongoDBConnection || !MySQLConnection || !FirebaseConnection){
                     rejected({
@@ -24,7 +24,6 @@ export class Connections{
                         }
                     })
                 }
-                console.log(await FirebaseConnection?.firestore().collection("products").count())
                 resolve({DataBases_Status:{
                     MySQL:`Connected 🚀`,
                     MongoDb:`Connected 🚀`,

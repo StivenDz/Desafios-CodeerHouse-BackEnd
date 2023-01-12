@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+:root{
+    --greyDark:#18191A;
+    --greyStandar:#242526;
+    --greyStandarLigth:#3E4042;
+    --greyStandarLigthX2:#3e4042a1;
+    --greyStandarLigthX3:#B0B3B8;
+    --blueStandar: #3483fa;
+    --blueStandarHover:#1668e4;
+}
+
+img::selection,i::selection,svg::selection{
+    background: none;
+}
+
+button,a{
+    cursor: pointer !important;
+}
+
+body{
+    background: #edf0f5;
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+header{
+    height: 65px;
+    width: 100%;
+    background: #242526;
+    padding: 0 15px;
+    box-shadow: 0 -8px 9px 9px #18191a3a
+}
+header > form {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+header > form > button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: var(--blueStandar);
+    color: #fff;
+    font-size: 15px;
+}
+header > form > button:hover{
+    background: var(--blueStandarHover);
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    color: white;
+    min-height: calc(100vh - 65px);
+    background-color: var(--greyDark);
+}
+main > aside >div> h1{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+main > aside{
+    padding: 10px 0px 0px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+main > aside > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+main > aside > div:first-of-type > img{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+}
+main > aside > div:nth-child(2) >i{
+    background-image: url(/images/logos.png);
+    background-position: 0 -444px;
+    background-size: auto;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+main > aside > div:nth-child(3) >i{
+    background-image: url(/images/view.png);
+    background-position: center;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+main #modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    z-index: 999;
+    background: #18191a62;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main > #modal > div{
+    height: 400px;
+    width: 400%;
+    border-radius: 8px;
+    background: #242526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+form.login{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+form.login >div{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+form.login >div> input{
+    height: 48px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 7px;
+    padding-top: 5px;
+    border: 1px solid #dddfe2;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px 10px;
+}
+
+
+form.login >div> input::placeholder {
+    color: #1d2129a2 !important;
+}
+
+form.login >div> input:focus {
+    border-color: #1b74e4;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    caret-color: #1b74e4;
+}
+
+form.login >div> input:focus::placeholder {
+    color: #aeb1b1 !important;
+}
+form.login > button{
+    height: 48px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: var(--blueStandar);
+    color: #fff;
+    font-size: 15px;
+}
+form.login > button:hover{
+    background: var(--blueStandarHover);
+}

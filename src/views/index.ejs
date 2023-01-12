@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("partials/head")  %>
+<body>
+    <header>
+        <form id="logout" method="POST" action="/logout">
+            <button type="submit">LogOut</button>
+        </form>
+    </header>
+    <main id="root">
+        <aside>
+            <div>
+                <img src="/images/user.png" alt="">
+                <h1 id="userName"><%=userName%></h1>
+            </div>
+            <div>
+                <i></i> 
+                <p>Time Remaining: <span id="time">00:01:00</span></p>
+            </div>
+            <div>
+                <i></i> 
+                <p>Views: <%=views%></p>
+            </div>
+        </aside>
+    </main>
+    <%- include("partials/scripts")  %>
+</body>
+</html>

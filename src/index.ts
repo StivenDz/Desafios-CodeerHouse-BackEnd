@@ -1,14 +1,15 @@
-import express,{Application,Request,Response} from "express";
+import express,{Application} from "express";
 import morgan from "morgan";
 import { Connections } from "./connections/index.Connections";
 import {blue,green} from "colors";
 import dotenv from "dotenv";
 import Path from "path";
+import { API_KEY } from "./middlewares/apikey.middleware";
+import { routes } from "./routes/index.Routes";
 
 
 // INITIALIZATIONS
 const app:Application = express();
-
 
 // CONFIGURATIONS
 app.set("port",process.env.PORT || process.argv[2]);
@@ -25,13 +26,10 @@ Connections.execute()
 
 // MIDDLEWARES
 app.use(morgan("dev"));
-
+app.use(API_KEY.Validate);
 
 // ROUTES
-app.get("/",(_req:Request,res:Response)=>{
-    res.send("ok")
-});
-
+app.use(routes);
 
 // SERVER
 app.listen(PORT,()=>{

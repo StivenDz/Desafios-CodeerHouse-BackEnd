@@ -4,7 +4,7 @@ import { Connections } from "./connections/index.Connections";
 import {blue,green} from "colors";
 import dotenv from "dotenv";
 import Path from "path";
-import { API_KEY } from "./middlewares/apikey.middleware";
+import { API_KEY } from "./middlewares/ApiKey.Middleware";
 import { routes } from "./routes/index.Routes";
 
 

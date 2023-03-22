@@ -1,3 +1,5 @@
+
+// @Entity
 export class UserEntity{
     public static id:number;
     public static userId:string;

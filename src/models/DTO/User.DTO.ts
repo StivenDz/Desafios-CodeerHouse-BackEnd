@@ -1,3 +1,5 @@
+
+// @DTO
 export class UserDTO{
     public static username:string;
     public static password:string;

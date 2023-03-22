@@ -11,8 +11,11 @@ export class UserValidator{
             await schema.validateAsync(req.body);
             next()
         }catch(err){
-            res.status(400);
-            res.end()
+            res.status(400).json({
+                error:"Invalid Auth schema",
+                received:req.body,
+                expected:schema
+            });
         }
     }
     public static async SignUp(req:Request,res:Response,next:NextFunction){
@@ -28,8 +31,11 @@ export class UserValidator{
             await schema.validateAsync(req.body);
             next()
         }catch(err){
-            res.status(400);
-            res.end()
+            res.status(400).json({
+                error:"Invalid User schema",
+                received:req.body,
+                expected:schema
+            });
         }
     }
 }

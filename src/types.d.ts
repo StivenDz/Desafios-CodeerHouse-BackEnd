@@ -17,3 +17,11 @@ declare global {
 }
 
 export type ENV = "production" | "development";
+
+export type QuantitySelected = {
+  productId:number,
+  cartId:string,
+  selected:number
+}
+
+export type Query = [string, [string]]

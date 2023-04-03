@@ -25,3 +25,9 @@ export type QuantitySelected = {
 }
 
 export type Query = [string, [string]]
+
+export interface AuthResponse {
+  validUser: boolean,
+  message: string,
+  user?: UserData
+}

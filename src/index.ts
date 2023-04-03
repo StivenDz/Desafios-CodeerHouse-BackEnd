@@ -16,7 +16,7 @@ app.set("port",process.env.PORT || process.argv[2]);
 dotenv.config({path:Path.join(__dirname,"../.env")});
 const PORT = app.get("port");
 
-// Connections
+// CONNECTIONS
 Connections.execute()
     .then(table=> {
         console.table(table);

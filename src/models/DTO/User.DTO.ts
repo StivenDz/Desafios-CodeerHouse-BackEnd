@@ -1,9 +1,9 @@
 
 // @DTO
-export class UserDTO{
-    public static username:string;
-    public static password:string;
-    public static email:string;
-    public static address:string;
-    public static age:Number;
+export type UserDTO = {
+    username: string;
+    password: string;
+    email: string;
+    address: string;
+    age: Number;
 }

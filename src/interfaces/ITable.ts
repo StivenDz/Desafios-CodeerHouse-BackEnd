@@ -1,6 +1,6 @@
 export interface ITable<Entity> {
-    SELECT():Entity;
+    SELECT():Promise<Array<Entity>>;
     UPDATE(id:number):boolean;
     DELETE(id:number):boolean;
-    INSERT(entity:Entity):boolean
+    INSERT(entity:Entity):Promise<boolean>
 }

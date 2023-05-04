@@ -11,7 +11,7 @@ export class Connections{
     public static async execute(){
         return new Promise(async(resolve,rejected)=>{
             try{
-                const MySQLConnection = await new MySQLClient(MySQLConfig.development).connect();
+                const MySQLConnection = await new MySQLClient(MySQLConfig[`${environment}`]).connect();
                 
                 if(!MySQLConnection){
                     rejected({

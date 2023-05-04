@@ -5,7 +5,8 @@ import {blue,green} from "colors";
 import dotenv from "dotenv";
 import Path from "path";
 import { API_KEY } from "./middlewares/ApiKey.Middleware";
-import { routes } from "./routes/index.Routes";
+import { IndexRouter } from "./routes/index.Routes";
+import { loadControllers } from "./context/Controller.Context";
 
 
 // INITIALIZATIONS
@@ -18,21 +19,25 @@ const PORT = app.get("port");
 
 // CONNECTIONS
 Connections.execute()
-    .then(table=> {
-        console.table(table);
-        console.log(green(`Enable mode '${process.env.NODE_ENV}'`));
-    })
-    .catch(table=> console.table(table))
+.then(table=> {
+    console.table(table);
+    console.log(green(`Enable mode '${process.env.NODE_ENV}'\n`));
+})
+.catch(table=> console.table(table))
 
 // MIDDLEWARES
+app.use(express.json());
+app.use(express.urlencoded({extended:true}));
 app.use(morgan("dev"));
 app.use(API_KEY.Validate);
+app.use(express.static(Path.join(__dirname,"./public")))
+loadControllers()
 
 // ROUTES
-app.use(routes);
+app.use(IndexRouter.getRoutes());
+
 
 // SERVER
 app.listen(PORT,()=>{
-    console.clear();
-    console.log(`Server Running on PORT ${PORT}\nMake request to ${blue(`http://localhost:${PORT}`)}`);
+    console.log(`\nServer Running on PORT ${PORT}, Make request to ${blue(`http://localhost:${PORT}`)}`);
 });

@@ -31,3 +31,13 @@ export interface AuthResponse {
   message: string,
   user?: UserData
 }
+
+export interface RouteContext {
+  path:string;
+  controller:any;
+  httpMethod:HttpMethod;
+  controllerName:string;
+  controllerMethod:any;
+}
+
+export type HttpMethod = 'get' | 'post' | 'put' | 'delete'

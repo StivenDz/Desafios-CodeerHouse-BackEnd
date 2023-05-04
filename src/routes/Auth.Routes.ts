@@ -1,10 +1,11 @@
-import { Router } from "express";
-import { AuthController } from "../controllers/Auth.Controller";
+// import { Request, Response, Router } from "express";
+// import { AuthController } from "../controllers/Auth.Controller";
 
-const AuthRouter = Router();
+// console.log(new AuthController()["getMail"]);
+
+// const AuthRouter = Router();
+
+// AuthRouter.get("/users",(_req:Request,res:Response)=>res.send("ok"));
 
 
-AuthRouter.get("/users",AuthController.getUsers);
-
-
-export {AuthRouter};
+// export {AuthRouter};

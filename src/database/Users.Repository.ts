@@ -17,7 +17,7 @@ export class UsersRepository  implements ITable<UserEntity>{
     }
     public async SELECT(): Promise<Array<UserEntity>> {
         const [result] = await (await this.DB())?.query("SELECT id,userId,firstName,lastName,email,address,phone,gender,birthDay,profileImage,profileImagePath FROM users");
-        return ParseToEntity.ToArrayUserEntity(result);
+        return ParseToEntity.ToArrayEntity(result);
     }
     public  async SELECT_ID(userId:string){
         const [response] = await (await this.DB())?.query(...Query.SELECT_BY_COLUMN("users","userId",userId));

@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "command": "npm run debug",
+            "name": "debug typescript",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+    {
+    "name": "Attach by Process ID",
+    "port": 9845,
+    "request": "attach",
+    "skipFiles": [
+    "<node_internals>/**"
+    ],
+    "type": "node"
+                 }
+          ]
+    }

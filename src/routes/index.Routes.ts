@@ -1,16 +1,18 @@
 import express from "express";
-import { AuthRouter } from "./Auth.Routes";
-import { ProductRouter } from "./Product.Routes";
-import { ShoppingCartRouter } from "./ShoppingCart.Routes";
+import {RouterContext}  from "../context/Router.Context";
+import { RouteContext } from "@types";
+import { controllers } from "../context/Controller.Context";
 
-const app = express();
-
-//AuthRouter
-app.use("/api/Auth",AuthRouter);
-//ProductRouter
-app.use("/api/product",ProductRouter);
-//ShoppingCartRouter
-app.use("/api/product",ShoppingCartRouter);
-
-
-export {app as routes};
+export class IndexRouter{
+    
+    public static getRoutes(){
+        const app = express();
+        RouterContext.getRoutes().map((route:RouteContext)=>{
+            const controller = controllers[route.controllerName.toLowerCase()]
+            app[route.httpMethod](route.path,controller[route.controllerMethod].bind(controller)) //bind to keep the this object
+            //app["get"]("/Auth/GetUsers",(_req:Request,res:Response)=>res.send("ok") )
+            
+        })
+        return app;
+    }
+}

@@ -8,7 +8,7 @@ export class ShoppingCartRepository implements ITable<ShoppingCartEntity>{
         return db;
     }
     public async CheckTableExistence(){
-        const [result] = await (await this.DB()).query("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE  TABLE_NAME = 'products' LIMIT 1")
+        const [result] = await (await this.DB()).query("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE  TABLE_NAME = 'shoppingCarts' LIMIT 1")
         return result
     }
     public async CREATE_TABLE(){

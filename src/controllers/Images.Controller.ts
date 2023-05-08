@@ -1,15 +1,16 @@
-import { NextFunction, Request, Response } from "express";
+import { Request, Response } from "express";
 import { Controller } from "../decorators/Controller.dec";
 import { POST } from "../decorators/Http.dec";
 import { Multer } from "../middlewares/multer.Middleware";
+import { Middleware } from "../decorators/Middleware.dec";
 
 @Controller()
 export class ImagesController{
 
+    @Middleware(Multer.uploadImage)
     @POST()
-    public async upload(req:Request,res:Response,next:NextFunction){
+    public async upload(_req:Request,res:Response){
         try{
-            await Multer.uploadImage(req,res,next);
             const path = Multer.getPath;
             if(!path.length){
                 res.status(400).json( Multer.getError);

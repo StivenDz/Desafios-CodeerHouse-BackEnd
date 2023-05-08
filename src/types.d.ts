@@ -38,6 +38,18 @@ export interface RouteContext {
   httpMethod:HttpMethod;
   controllerName:string;
   controllerMethod:any;
+  middleware:any | null;
 }
 
+declare module 'express-session' {
+  interface SessionData {
+      token: string | null
+  }
+}
+export type Table = {
+  name:string;
+  checkTable:any;
+  createTable:any;
+  repository:any
+}
 export type HttpMethod = 'get' | 'post' | 'put' | 'delete'

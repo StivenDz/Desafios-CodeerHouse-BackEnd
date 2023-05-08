@@ -1,25 +1,26 @@
 import { MySQLClient } from "./MySQL.Client";
 import { MySQLConfig } from "../configs/MySQL.config";
-import { ENV } from "@types";
+import { Pool } from "mysql2/promise";
 
-const environment:ENV = process.env.NODE_ENV;
+
 
 export class Connections{
-    public static async getMySQLConnection(){
-        return await new MySQLClient(MySQLConfig[`${environment}`]).getConnection();
-    }
+
+    public static SQLClient:MySQLClient = new MySQLClient(MySQLConfig);
+    public static SQLConnection:Pool;
+
     public static async execute(){
-        return new Promise(async(resolve,rejected)=>{
+        return await new Promise(async(resolve,rejected)=>{
             try{
-                const MySQLConnection = await new MySQLClient(MySQLConfig[`${environment}`]).connect();
-                
-                if(!MySQLConnection){
+                const Connection = await this.SQLClient.connect();
+                if(!Connection){
                     rejected({
                         DataBases_Status:{
-                            MySQL:!MySQLConnection ? `Error ❌` : `Connected 🚀`
+                            MySQL:`Error ❌`
                         }
                     })
                 }
+                this.SQLConnection = await this.SQLClient.getConnection();
                 resolve({DataBases_Status:{
                     MySQL:`Connected 🚀`
                 }});

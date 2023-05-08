@@ -20,12 +20,10 @@ export class UserValidator{
     }
     public static async SignUp(req:Request,res:Response,next:NextFunction){
         const schema = Joi.object({
-            firstName:Joi.string().required(),
+            name:Joi.string().required(),
             lastName:Joi.string().required(),
             email:Joi.string().required(),
-            password:Joi.string().required(),
-            birthDay:Joi.string().required(),
-            gender:Joi.string().required()
+            password:Joi.string().required()
         })
         try{
             await schema.validateAsync(req.body);

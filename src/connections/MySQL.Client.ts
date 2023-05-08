@@ -14,7 +14,7 @@ export class MySQLClient{
         }
     }
 
-    public async getConnection(){
-        return createPool(this.config);
+    public  getConnection(){
+        return  createPool(this.config);
     }
 }

@@ -3,6 +3,7 @@ import { Request, Response } from "express";
 import { GET } from "../decorators/Http.dec";
 import { ProductService } from "../services/Product.Service";
 import { Inject } from "../decorators/Injectable.dec";
+import { ProductEntity } from "../models/Entity/Product.Entity";
 
 // GET /api/products: devuelve todos los productos
 // GET /api/products/{id}: devuelve un producto segun id
@@ -20,7 +21,7 @@ export class ProductsController{
     @GET()
     public async getAllProducts(_req:Request,res:Response){
         try{
-            const products = await this.productService?.getAll();
+            const products:Array<ProductEntity> = await this.productService?.getAll();
             res.status(200).json(products);
         }catch(ex:any){
             res.status(500).json({error:ex.message});

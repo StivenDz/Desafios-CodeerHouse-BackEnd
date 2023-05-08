@@ -32,7 +32,8 @@ export class Multer{
                         httpMethod:"post",
                         path:req.url,
                         controllerMethod:null,
-                        controllerName:""
+                        controllerName:"",
+                        middleware:null
                     },"file should be a valid image")
                     return cb(null,false);
                 };

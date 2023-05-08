@@ -1,9 +1,11 @@
 import dotenv from "dotenv";
 import Path from "path";
-import { MySQLCredentials } from "@types";
+import { ENV, MySQLCredentials } from "@types";
 
 dotenv.config({path:Path.join(__dirname,"../../.env")});
 
+
+const environment:ENV = process.env.NODE_ENV;
 const development: MySQLCredentials= {
     host: process.env.DEV_MYSQL_DBHOST ||"",
     port: Number(process.env.DEV_MYSQL_DBPORT) || 0,
@@ -25,4 +27,4 @@ const production: MySQLCredentials= {
 export const MySQLConfig = {
     development,
     production
-};
+}[`${environment}`];

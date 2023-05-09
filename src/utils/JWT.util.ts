@@ -27,4 +27,8 @@ export class JWT {
             this.tokens.push(token);
         }
     }
+    public static isLogged(token: string){
+        const isLogged = this.tokens.filter((tok)=>tok == token);
+        return isLogged.length > 0
+    }
 }

@@ -13,6 +13,7 @@ export class JWT {
             const authType = req.headers.authorization?.split(" ")[0];
 
             if (!token) return res.status(401).json({ error: "not authenticated" });
+            if (!JWT_util.isLogged(token)) return res.status(401).json({ error: "not authenticated" });
             if (authType && authType != "Bearer") return res.status(401).json({ error: `authentication method ${authType} is not allowed, use Bearer Token` });
 
             jwt.verify(token, Constants.PRIVATE_KEY || "");

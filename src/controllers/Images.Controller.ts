@@ -4,7 +4,7 @@ import { POST } from "../decorators/Http.dec";
 import { Multer } from "../middlewares/multer.Middleware";
 import { Middleware } from "../decorators/Middleware.dec";
 
-@Controller()
+@Controller("images")
 export class ImagesController{
 
     @Middleware(Multer.uploadImage)

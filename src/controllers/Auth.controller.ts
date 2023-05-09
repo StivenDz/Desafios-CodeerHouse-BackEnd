@@ -9,13 +9,14 @@ import { Inject } from "../decorators/Injectable.dec";
 import { JWT as JWT_util } from "../utils/JWT.util";
 import { Middleware } from "../decorators/Middleware.dec";
 import { JWT } from "../middlewares/JWT.Middleware";
+import { UserEntity } from "../models/Entity/User.Entity";
 
-@Controller()
+@Controller("users")
 export class AuthController extends ControllerBase{
     prototype = Object.getOwnPropertyNames(AuthController.prototype);
 
     @Inject("authService")
-    public authService!:AuthService;
+    private authService!:AuthService;
 
     @Middleware(UserValidator.SignUp)
     @POST()
@@ -39,13 +40,32 @@ export class AuthController extends ControllerBase{
             res.status(500).json({error:ex.message})
         }
     }
+    @Middleware(UserValidator.Auth)
+    @POST("sessions")
+    public async Authenticate(req:Request,res:Response){
+        const user:UserDTO = req.body;
+        try{
+            const response = await this.authService.Authenticate(user);
+            if(response.validUser && response.user){
+                const token = JWT_util.CreateToken(response.user);
+                res.status(200).json({
+                    successfully:response.message,
+                    token
+                })
+            }else{
+                res.status(400).json({error:response.message})
+            }
+        }catch(ex:any){
+            res.status(500).json({error:ex.message})
+        }
+    }
 
     @Middleware(JWT.verifyToken)
     @GET()
-    public async users(_req:Request,res:Response){
+    public async users(req:Request,res:Response){
         try{
-            const users = await this.authService.getUsers();
-            res.status(200).json(users);
+            const user:UserEntity = JWT_util.DecryptToken(JWT.getToken(req))
+            res.status(200).json(user);
         }catch(ex:any){
             res.status(500).json({error:ex.message})
         }

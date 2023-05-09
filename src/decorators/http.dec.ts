@@ -18,7 +18,7 @@ export const DELETE = (path?: string) => {
 const http = (httpMethod: HttpMethod, path?: string) => {
     return function (target: any, methodName: string, descriptor: PropertyDescriptor) {
         path = getPath(target, methodName, path);
-        RouterContext.addEndPoint({ path, controller: descriptor.value, httpMethod,controllerName:target.constructor.name,controllerMethod:methodName,middleware:null });
+        RouterContext.addEndPoint({ path, controller: descriptor.value, httpMethod,controllerName:target.constructor.name,controllerMethod:methodName,middlewares:[] });
     };
 }
 

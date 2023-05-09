@@ -1,11 +1,26 @@
-import { QuantitySelected } from "@types";
-import { ProductDTO } from "./Product.DTO";
+import { ProductCartEntity } from "../Entity/ProductCart.Entity";
+import { ShoppingCartEntity } from "../Entity/ShoppingCart.Entity";
 
 // @DTO
 export class ShoppingCartDTO {
-    public static id: number;
-    public static cartId: string;
-    public static userId:string;
-    public static products: Array<ProductDTO>;
-    public static quantitySelected: Array<QuantitySelected>;
+    public id?: number;
+    public cartId?: string;
+    public userId: string;
+    public products: Array<ProductCartEntity> | JSON;
+    public created_At?: Date;
+
+    constructor(
+        userId: string,
+        products: Array<ProductCartEntity> | JSON,
+    ) {
+        this.userId = userId;
+        this.products = products
+    }
+
+    toEntity(){
+        return new ShoppingCartEntity(
+            this.userId,
+            this.products
+        )
+    }
 }

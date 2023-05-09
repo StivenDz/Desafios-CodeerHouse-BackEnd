@@ -1,3 +1,5 @@
+import {UserEntity} from "./models/Entity/User.Entity";
+
 export interface MySQLCredentials {
     host: string,
     port?: number,
@@ -29,7 +31,7 @@ export type Query = [string, [string]]
 export interface AuthResponse {
   validUser: boolean,
   message: string,
-  user?: UserData
+  user?: UserEntity
 }
 
 export interface RouteContext {
@@ -38,7 +40,7 @@ export interface RouteContext {
   httpMethod:HttpMethod;
   controllerName:string;
   controllerMethod:any;
-  middleware:any | null;
+  middlewares:Array<any>;
 }
 
 declare module 'express-session' {

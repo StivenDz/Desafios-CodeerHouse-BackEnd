@@ -1,4 +1,5 @@
 import { UserEntity } from "../Entity/User.Entity";
+import bcrypt from "bcryptjs";
 
 // @DTO
 export class UserDTO {
@@ -20,9 +21,13 @@ export class UserDTO {
         this.image = image;
     }
 
-    toEntity():UserEntity{
+    public toEntity(): UserEntity {
         return new UserEntity(
-            this.name,this.lastName,this.password,this.email,this.image
+            this.name, 
+            this.lastName, 
+            bcrypt.hashSync(this.password), 
+            this.email, 
+            this.image
         )
     }
 }

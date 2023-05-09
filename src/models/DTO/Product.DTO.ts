@@ -1,19 +1,30 @@
-export class ProductDTO {
-    public productId: string;
-    public title: string;
-    public price: number;
-    public stock: number;
-    public thumbnail: string;
+import { ProductEntity } from "../Entity/Product.Entity";
+import {randomUUID} from "crypto";
 
-    constructor(productId: string,
-        title: string,
+// @DTO
+export class ProductDTO {
+    public name: string;
+    public description: string;
+    public price: number;
+    public image?: string;
+
+    constructor(name: string,
+        description: string,
         price: number,
-        stock: number,
-        thumbnail: string) {
-            this.productId = productId;
-            this.title = title;
-            this.price = price;
-            this.stock = stock;
-            this.thumbnail = thumbnail;
+        image?: string) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.image = image;
+    }
+
+    public toEntity():ProductEntity{
+        return new ProductEntity(
+            randomUUID(),
+            this.name,
+            this.description,
+            this.price,
+            this.image
+        )
     }
 }

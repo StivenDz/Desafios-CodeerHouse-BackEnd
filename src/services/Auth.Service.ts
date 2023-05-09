@@ -1,17 +1,16 @@
 import { UsersRepository } from "../database/Users.Repository";
 import { UserEntity } from "../models/Entity/User.Entity";
 import bcrypt from "bcryptjs";
-import { randomUUID } from "crypto";
 import { UserDTO } from "../models/DTO/User.DTO";
 import { AuthResponse } from "@types";
-import { Inject, Injectable } from "../decorators/Injectable.dec";
-import { EntityParser } from "../utils/ParseToEntity";
+import {  Injectable } from "../decorators/Injectable.dec";
+import { Autowired } from "../decorators/Autowired.dec";
 
 @Injectable("authService")
 export class AuthService{
 
-    @Inject("usersRepository")
-    public repository!:UsersRepository;
+    @Autowired("usersRepository")
+    private repository!:UsersRepository;
 
     public async Authenticate(userData:UserDTO):Promise<AuthResponse>{
         const response = await this.getUserByEmail(userData.email);
@@ -21,9 +20,8 @@ export class AuthService{
     }
 
     public async getUserByEmail(email:string): Promise<UserEntity | null>{
-        const response = await this.repository.SELECT_BY_COLUMN("email",email);
-        const user:Array<UserEntity> = EntityParser.ToArrayEntity<UserEntity>(response);
-        return !user.length ? null : user[0]
+        const user:UserEntity = await this.repository.SELECT_BY_COLUMN("email",email);
+        return !user ? null : user;
     }
 
     private  validatePasword(password:string,cPassword:string){
@@ -34,8 +32,6 @@ export class AuthService{
     public async Register(user:UserEntity){
         const response = await this.getUserByEmail(user.email);
         if(response) return false;
-        user.userId = randomUUID();
-        user.password = bcrypt.hashSync(user.password);
         await this.repository.INSERT(user);
         return true
     }

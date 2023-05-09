@@ -14,7 +14,7 @@ export class UserValidator{
             res.status(400).json({
                 error:"Invalid Auth schema",
                 received:req.body,
-                expected:schema
+                expected:schema.describe() 
             });
         }
     }
@@ -32,7 +32,7 @@ export class UserValidator{
             res.status(400).json({
                 error:"Invalid User schema",
                 received:req.body,
-                expected:schema
+                expected:schema.describe() 
             });
         }
     }

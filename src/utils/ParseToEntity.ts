@@ -9,7 +9,7 @@ export class EntityParser{
         return entity
     }
     public static ToEntity<EntityType>(result:Type):EntityType{
-        const entity:EntityType = JSON.parse(JSON.stringify(result));
+        const entity:EntityType = JSON.parse(JSON.stringify(result))[0];
         return entity
     }
 }

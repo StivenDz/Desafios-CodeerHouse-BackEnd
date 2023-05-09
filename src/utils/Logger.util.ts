@@ -21,7 +21,7 @@ export class Logger {
     }
     public static TableCreated(table:string){
         const date = DatePaser.curentDateInISOFormat();
-        console.log(`${green("[API REST] -")} ${date} ${green("LOG")} ${yellow("[TableCreated]")} ${green(`[${table}]`)}`);
+        console.log(`${green("[API REST] -")} ${date} ${green("LOG")} ${yellow("[TableCreated]")} ${green(`[${table.toUpperCase()}]`)}`);
     }
     public static TableVerified(table:string){
         const date = DatePaser.curentDateInISOFormat();

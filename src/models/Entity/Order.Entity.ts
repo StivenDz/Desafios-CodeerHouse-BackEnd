@@ -1,19 +1,18 @@
 import { ProductCartEntity } from "./ProductCart.Entity";
-import {randomUUID} from "crypto";
+import {randomUUID} from "crypto"
 
-// @Entity
-export class ShoppingCartEntity {
+export class OrderEntity{
     public id?: number;
-    public cartId: string;
+    public orderId: string;
     public userId: string;
-    public products: Array<ProductCartEntity> | JSON;
     public created_At?: Date;
+    public products: Array<ProductCartEntity> | JSON;
 
     constructor(
         userId: string,
         products: Array<ProductCartEntity> | JSON,
     ) {
-        this.cartId = randomUUID();
+        this.orderId = randomUUID();
         this.userId = userId;
         this.products = products
     }

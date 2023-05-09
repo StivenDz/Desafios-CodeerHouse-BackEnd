@@ -39,7 +39,6 @@ Connections.execute()
     // ROUTES
     app.use(IndexRouter.getRoutes());
     
-    
     // SERVER
     app.listen(PORT,()=>{
         console.log(green(`\nEnable mode ${process.env.NODE_ENV.toUpperCase()}\n`));

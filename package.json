@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node-dev src/index.ts 9999",
+    "compile":"tsc",
+    "build":"npm run compile && call script.bat",
     "debug": "ts-node-dev --files --transpile-only --respawn --inspect=9999 --project tsconfig.json src/index.ts 9999"
   },
   "repository": {

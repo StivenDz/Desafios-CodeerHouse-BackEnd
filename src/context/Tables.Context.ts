@@ -16,7 +16,7 @@ export class Tables {
         await Promise.all(tables.map(async (table: Table) => {
             try {
                 const exist = (await table.checkTable()).length > 0;
-                if(!exist) {
+                if (!exist) {
                     await table.createTable();
                     Logger.TableCreated(table.name);
                     return

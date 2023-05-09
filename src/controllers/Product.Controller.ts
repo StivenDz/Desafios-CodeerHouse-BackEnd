@@ -45,9 +45,8 @@ export class ProductController {
     public async createProduct(req: Request, res: Response) {
         const product: ProductDTO = req.body;
         try {
-            const productEntity: ProductEntity = new ProductDTO(product.name, product.description, product.price, product.image).toEntity();
-            await this.productService.save(productEntity);
-            res.status(201).json({ successfully: "product created", product: await this.productService.getByProductId(productEntity.productId) });
+            const productEntity = await this.productService.save(product);
+            res.status(201).json({ successfully: "product created", product: productEntity });
         } catch (ex: any) {
             res.status(500).json({ error: ex.message });
         }

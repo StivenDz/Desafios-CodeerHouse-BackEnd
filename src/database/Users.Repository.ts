@@ -1,4 +1,5 @@
 import { Connections } from "../connections/index.Connections"
+import { Constants } from "../constants/index.contants";
 import { Autowired } from "../decorators/Autowired.dec";
 import { Injectable } from "../decorators/Injectable.dec";
 import { Repository } from "../decorators/Repository.dec";
@@ -15,7 +16,7 @@ import bcrypt from "bcryptjs"
 export class UsersRepository implements IRepository<UserEntity>{
 
     @Autowired("shoppingCartRepository")
-    private shoppingCartRepository!:ShoppingCartRepository;
+    private shoppingCartRepository!: ShoppingCartRepository;
 
     public tableName: string = "users";
     public get getTableName(): string {
@@ -56,7 +57,7 @@ export class UsersRepository implements IRepository<UserEntity>{
         return true;
     }
     private async INSERT_DEFAULT_ADMIN_USER() {
-        const user = new UserEntity("Stiven","Diaz",bcrypt.hashSync("123456789"), process.env.ADMIN || "");
+        const user = new UserEntity("Stiven", "Diaz", bcrypt.hashSync("123456789"), Constants.ADMIN || "");
         await this.INSERT(user);
     }
     public async UPDATE(_dto: any, _id: string | number): Promise<boolean> {

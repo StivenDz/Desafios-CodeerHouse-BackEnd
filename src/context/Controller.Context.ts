@@ -4,7 +4,7 @@ import { ProductController } from "../controllers/Product.Controller";
 import { ShoppingCartController } from "../controllers/ShoppingCart.Controller";
 import { OrderController } from "../controllers/Order.Controller";
 
-export const controllers:any = {};
+export const controllers: any = {};
 
 export const loadControllers = () => {
     controllers[`authcontroller`] = new AuthController();

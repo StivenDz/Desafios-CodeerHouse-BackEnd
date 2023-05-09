@@ -6,7 +6,6 @@ export function Controller(controllerPath?: string): any {
 			RouterContext.BasicController(controllerPath, constructor); 
 			return constructor
 		}
-		// RouterContext.BasicController(`${constructor.name.replace("Controller","")}`,constructor);
 		else {
 			return class extends constructor {
 				controllerPath = !controllerPath ? `${constructor.name.replace("Controller", "")}` : controllerPath;
@@ -14,8 +13,3 @@ export function Controller(controllerPath?: string): any {
 		}
 	}
 }
-
-// const BasicRoute = (target: any, methodName: string, path?: string) => {
-//     const controller = (target.constructor.name).replace("Controller", "");
-//     return `/api/${controller}/${methodName}${path ? path?.includes("/") ? path : `/${path}` : ""}`;
-// }

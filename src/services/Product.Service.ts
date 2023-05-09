@@ -14,22 +14,24 @@ export class ProductService implements IService<ProductEntity>{
     public async getAll(): Promise<ProductEntity[]> {
         return await this.productRepository.SELECT();
     }
-    public async getByProductId(productId:string): Promise<ProductEntity> {
+    public async getByProductId(productId: string): Promise<ProductEntity> {
         return await this.productRepository.SELECT_ID(productId);
     }
-    public async save(product:ProductEntity):Promise<void>{
-        await this.productRepository.INSERT(product);
+    public async save(product: ProductDTO): Promise<ProductEntity> {
+        const productEntity: ProductEntity = new ProductDTO(product.name, product.description, product.price, product.image).toEntity();
+        await this.productRepository.INSERT(productEntity);
+        return await this.productRepository.SELECT_ID(productEntity.productId);
     }
-    public async updateById(dto:ProductDTO,productId:string):Promise<ProductEntity | null> {
+    public async updateById(dto: ProductDTO, productId: string): Promise<ProductEntity | null> {
         const product = await this.productRepository.SELECT_ID(productId);
-        if(!product) return null
-        const result = await this.productRepository.UPDATE(dto,productId);
+        if (!product) return null
+        const result = await this.productRepository.UPDATE(dto, productId);
         return result ? await this.productRepository.SELECT_ID(productId) : null;
     }
-    public async deleteById(productId:string):Promise<Boolean | null | ProductEntity> {
+    public async deleteById(productId: string): Promise<Boolean | null | ProductEntity> {
         const product = await this.productRepository.SELECT_ID(productId);
-        if(!product) return null
-        const result =  await this.productRepository.DELETE(productId);
+        if (!product) return null
+        const result = await this.productRepository.DELETE(productId);
         return result ? product : result
     }
 }

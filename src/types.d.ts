@@ -1,29 +1,29 @@
-import {UserEntity} from "./models/Entity/User.Entity";
+import { UserEntity } from "./models/Entity/User.Entity";
 
 export interface MySQLCredentials {
-    host: string,
-    port?: number,
-    user: string,
-    password: string,
-    database: string,
-    ssl?: {
-        rejectUnauthorized: boolean
-    }
+  host: string,
+  port?: number,
+  user: string,
+  password: string,
+  database: string,
+  ssl?: {
+    rejectUnauthorized: boolean
+  }
 }
 declare global {
-    namespace NodeJS {
-      interface ProcessEnv {
-        NODE_ENV: ENV
-      }
+  namespace NodeJS {
+    interface ProcessEnv {
+      NODE_ENV: ENV
     }
+  }
 }
 
 export type ENV = "production" | "development";
 
 export type QuantitySelected = {
-  productId:number,
-  cartId:string,
-  selected:number
+  productId: number,
+  cartId: string,
+  selected: number
 }
 
 export type Query = [string, [string]]
@@ -35,23 +35,23 @@ export interface AuthResponse {
 }
 
 export interface RouteContext {
-  path:string;
-  controller:any;
-  httpMethod:HttpMethod;
-  controllerName:string;
-  controllerMethod:any;
-  middlewares:Array<any>;
+  path: string;
+  controller: any;
+  httpMethod: HttpMethod;
+  controllerName: string;
+  controllerMethod: any;
+  middlewares: Array<any>;
 }
 
 declare module 'express-session' {
   interface SessionData {
-      token: string | null
+    token: string | null
   }
 }
 export type Table = {
-  name:string;
-  checkTable:any;
-  createTable:any;
-  repository:any
+  name: string;
+  checkTable: any;
+  createTable: any;
+  repository: any
 }
 export type HttpMethod = 'get' | 'post' | 'put' | 'delete'

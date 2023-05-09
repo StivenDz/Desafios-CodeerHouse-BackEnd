@@ -9,7 +9,7 @@ import { Query } from "./Queries";
 @Repository
 @Injectable("orderRepository")
 export class OrderRepository implements IRepository<OrderEntity>{
-    public tableName:string =  "orders";
+    public tableName: string = "orders";
 
     get getTableName(): string {
         return this.tableName;
@@ -24,16 +24,17 @@ export class OrderRepository implements IRepository<OrderEntity>{
     public async SELECT(): Promise<OrderEntity[]> {
         throw new Error("Method not implemented.");
     }
-    public async SELECT_ID(_id: string | number): Promise<OrderEntity> {
-        throw new Error("Method not implemented.");
-    }
-    public async SELECT_BY_USER_ID(userId: string): Promise<OrderEntity> {
-        const [result] = await Connections.SQLConnection.query(...Query.SELECT_BY_COLUMN(this.tableName,"userId",userId));
+    public async SELECT_ID(orderId: string): Promise<OrderEntity> {
+        const [result] = await Connections.SQLConnection.query(...Query.SELECT_BY_COLUMN(this.tableName, "orderId", orderId));
         return EntityParser.ToEntity<OrderEntity>(result)
     }
+    public async SELECT_BY_USER_ID(userId: string): Promise<Array<OrderEntity>> {
+        const [result] = await Connections.SQLConnection.query(...Query.SELECT_BY_COLUMN(this.tableName, "userId", userId));
+        return EntityParser.ToArrayEntity<OrderEntity>(result)
+    }
     public async INSERT(entity: OrderEntity): Promise<boolean> {
-        const {userId, orderId, products} = entity;
-        await Connections.SQLConnection.query("INSERT INTO orders(userId, orderId, products) VALUES(?,?,?)", [userId, orderId, products]);
+        const { userId, orderId, products } = entity;
+        await Connections.SQLConnection.query("INSERT INTO orders(userId, orderId, products) VALUES(?,?,?)", [userId, orderId, JSON.stringify(products)]);
         return true;
     }
     public async UPDATE(_dto: any, _id: string | number): Promise<boolean> {

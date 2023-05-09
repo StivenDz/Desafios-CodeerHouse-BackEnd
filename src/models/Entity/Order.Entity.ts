@@ -6,11 +6,11 @@ export class OrderEntity{
     public orderId: string;
     public userId: string;
     public created_At?: Date;
-    public products: Array<ProductCartEntity> | JSON;
+    public products: Array<ProductCartEntity>;
 
     constructor(
         userId: string,
-        products: Array<ProductCartEntity> | JSON,
+        products: Array<ProductCartEntity>,
     ) {
         this.orderId = randomUUID();
         this.userId = userId;

@@ -58,9 +58,9 @@ export class ProductRepository implements IRepository<ProductEntity>{
             )
         }))
     }
-    public async UPDATE(product: ProductDTO, productId:string) {
-        const {name,price,description,image} = product;
-        const [result] = await (Connections.SQLConnection).query("UPDATE products SET name = IFNULL(?,name) ,price = IFNULL(?,price), description = IFNULL(?,description), image = IFNULL(?,image) WHERE productId = ?", [name,price,description,image,productId]);
+    public async UPDATE(product: ProductDTO, productId: string) {
+        const { name, price, description, image } = product;
+        const [result] = await (Connections.SQLConnection).query("UPDATE products SET name = IFNULL(?,name) ,price = IFNULL(?,price), description = IFNULL(?,description), image = IFNULL(?,image) WHERE productId = ?", [name, price, description, image, productId]);
         return JSON.parse(JSON.stringify(result)).affectedRows > 0
     }
 

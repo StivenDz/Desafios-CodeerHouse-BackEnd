@@ -1,20 +1,20 @@
 import { MySQLCredentials } from "@types";
-import {createPool} from "mysql2/promise";
+import { createPool } from "mysql2/promise";
 
-export class MySQLClient{
-    public config:MySQLCredentials;
-    constructor(config:MySQLCredentials){
+export class MySQLClient {
+    public config: MySQLCredentials;
+    constructor(config: MySQLCredentials) {
         this.config = config
     }
-    public async connect(){
-        try{
+    public async connect() {
+        try {
             return await createPool(this.config).getConnection();
-        }catch(err){
+        } catch (err) {
             return null;
         }
     }
 
-    public  getConnection(){
-        return  createPool(this.config);
+    public getConnection() {
+        return createPool(this.config);
     }
 }

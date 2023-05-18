@@ -1,0 +1,44 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Proyecto final programacion backend (CoderHouse)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js 9999",
+    "start": "node src/index.js 9999"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StivenDz/Desafios-CoderHouse-BackEnd.git"
+  },
+  "keywords": [
+    "typescript",
+    "express",
+    "apiRest",
+    "coderhouse"
+  ],
+  "author": "Stiven Diaz <stivendiazh@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StivenDz/Desafios-CoderHouse-BackEnd/issues"
+  },
+  "homepage": "https://github.com/StivenDz/Desafios-CoderHouse-BackEnd#readme",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "reflect-metadata": "^0.1.13"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "joi": "^17.8.4",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.2.0",
+    "nodemailer": "^6.9.1"
+  }
+}
